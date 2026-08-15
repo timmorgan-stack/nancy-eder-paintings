@@ -117,7 +117,21 @@
       };
       if (![...perSel.options].some(o => o.value === state.per)) state.per = '10';
       statusSel.value = state.status; sortSel.value = state.sort; perSel.value = state.per; setSearchValue(state.q);
-      const perPage = () => state.per === 'all' ? Infinity : Number(state.per);
+      // Page size snaps to whole rows: the nearest multiple of the current column count to the chosen size
+      // (3 columns → 9, 4 → 12, 2 → 10), so the last row is never left with a widow.
+      const columns = () => {
+        const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+        return Math.max(1, cols || 1);
+      };
+      const perPage = () => {
+        if (state.per === 'all') return Infinity;
+        const cols = columns(), target = Number(state.per);
+        return Math.max(cols, Math.round(target / cols) * cols);
+      };
+      const labelPerOptions = () => {
+        const cols = columns();
+        [...perSel.options].forEach(o => { if (o.value !== 'all') o.textContent = `${Math.max(cols, Math.round(Number(o.value) / cols) * cols)} per page`; });
+      };
 
       const bySeries = (id) => cat.artworks.filter(a => a.series === id);
       const cover = (id) => { const w = bySeries(id); return w.find(a => a.featured) || w[0]; };
@@ -204,7 +218,7 @@
 
       function renderList(list, { title, blurb, eyebrow, s }) {
         list = sortList(list.filter(a => state.status === 'all' || a.status === state.status));
-        const per = perPage();
+        const per = perPage(); labelPerOptions();
         const pages = Math.max(1, Math.ceil(list.length / per));
         state.page = Math.min(state.page, pages);
         const start = (state.page - 1) * per;
@@ -262,6 +276,10 @@
         NE.revealAll();
       }
       render();
+
+      // Re-snap the page size if a resize changes the column count
+      let lastCols = columns(), rt;
+      window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (!trip.hidden && columns() !== lastCols) { lastCols = columns(); render(); } }, 150); });
 
       // Sticky trip bar appears once the tiles have scrolled away
       const onScroll = () => { bar.hidden = tiles.getBoundingClientRect().bottom > 80; };
