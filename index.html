@@ -35,12 +35,12 @@
     </section>
 
     <!-- Featured -->
-    <section class="section" data-hook="featured">
+    <section id="featured" class="section" data-hook="featured">
       <div class="wrap">
         <div class="section-head">
           <div>
             <div class="eyebrow">Selected works</div>
-            <h2>Featured paintings</h2>
+            <h2><a class="anchor" href="#featured">Featured paintings</a></h2>
           </div>
           <a class="link link-arrow" href="gallery.html">View all work</a>
         </div>
@@ -49,12 +49,12 @@
     </section>
 
     <!-- Series -->
-    <section class="section section--tight band" data-hook="series">
+    <section id="sketchbooks" class="section section--tight band" data-hook="series">
       <div class="wrap">
         <div class="section-head">
           <div>
             <div class="eyebrow">Browse by trip</div>
-            <h2>Sketchbooks</h2>
+            <h2><a class="anchor" href="#sketchbooks">Sketchbooks</a></h2>
           </div>
         </div>
         <div class="series-strip" data-series-strip></div>
@@ -62,12 +62,12 @@
     </section>
 
     <!-- Buying -->
-    <section class="section" data-hook="buying">
+    <section id="buying" class="section" data-hook="buying">
       <div class="wrap">
         <div class="section-head">
           <div>
             <div class="eyebrow">Collecting</div>
-            <h2>Buying an original</h2>
+            <h2><a class="anchor" href="#buying">Buying an original</a></h2>
           </div>
         </div>
         <div class="trio">
@@ -91,7 +91,7 @@
     </section>
 
     <!-- Newsletter / CTA -->
-    <section class="section band--ink" data-hook="newsletter">
+    <section id="newsletter" class="section band--ink" data-hook="newsletter">
       <div class="wrap two-col" style="align-items:center">
         <div>
           <div class="eyebrow" style="color:rgba(248,246,241,.55)">Stay in touch</div>
@@ -145,6 +145,7 @@
         return `<a class="series-tile reveal" href="gallery.html?series=${s.id}"><img src="${cover.image.thumb}" alt="" loading="lazy"><span>${s.name} <small class="muted">· ${works.length} works</small></span></a>`;
       }).join('');
       NE.revealAll();
+      NE.jumpToHash();
 
       // Newsletter (placeholder handler — wire to codanomix mailer later)
       document.querySelector('[data-hook="newsletter-form"]').addEventListener('submit', (e) => {

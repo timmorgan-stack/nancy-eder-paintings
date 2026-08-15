@@ -200,12 +200,43 @@ window.NE = (function () {
   const setQs = (obj) => {
     const p = new URLSearchParams(location.search);
     Object.entries(obj).forEach(([k, v]) => (v == null || v === '' || v === 'all') ? p.delete(k) : p.set(k, v));
-    history.replaceState(null, '', p.toString() ? `?${p}` : location.pathname);
+    history.replaceState(null, '', (p.toString() ? `?${p}` : location.pathname) + location.hash);
   };
+
+  /* ---------- Image loading state ----------
+     Every <img> gets a quiet centred spinner behind it (on its parent) until it loads, then fades in.
+     Works for images rendered later too (grids, cart) via a MutationObserver. Lightbox handles its own. */
+  function watchImages(root = document) {
+    root.querySelectorAll('img:not([data-ld]):not(.lb__img)').forEach(img => {
+      img.dataset.ld = '1';
+      const p = img.parentElement; if (!p) return;
+      const done = () => { p.classList.remove('img-loading'); p.classList.add('is-loaded'); };
+      if (img.complete && img.naturalWidth) { p.classList.add('is-loaded'); return; }
+      p.classList.add('img-loading');
+      img.addEventListener('load', done, { once: true });
+      img.addEventListener('error', done, { once: true });
+    });
+  }
+  new MutationObserver((muts) => {
+    for (const m of muts) for (const n of m.addedNodes) if (n.nodeType === 1) { if (n.tagName === 'IMG') watchImages(n.parentElement || document); else if (n.querySelector) watchImages(n); }
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  /* ---------- Hash jump for JS-rendered sections ---------- */
+  function jumpToHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    const go = () => {
+      const el = document.getElementById(id); if (!el) return;
+      const offset = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'instant' }); // instant on load
+    };
+    go(); requestAnimationFrame(go); setTimeout(go, 250);
+  }
+  window.addEventListener('hashchange', jumpToHash);
 
   /* ---------- Boot ---------- */
   document.addEventListener('DOMContentLoaded', () => {
-    renderHeader(); renderFooter(); renderCartCount(); revealAll();
+    renderHeader(); renderFooter(); renderCartCount(); revealAll(); watchImages();
     document.addEventListener('click', (e) => {
       const add = e.target.closest('[data-add-to-cart]');
       if (add) {
@@ -217,5 +248,5 @@ window.NE = (function () {
     });
   });
 
-  return { loadCatalog, getArt, cart, money, toast, cardHTML, layoutGrid, watchGrid, revealAll, qs, setQs, ICON_ZOOM, SHIPPING_FLAT };
+  return { loadCatalog, getArt, cart, money, toast, cardHTML, layoutGrid, watchGrid, revealAll, jumpToHash, qs, setQs, ICON_ZOOM, SHIPPING_FLAT };
 })();

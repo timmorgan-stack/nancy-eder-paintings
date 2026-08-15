@@ -27,6 +27,9 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+[id] { scroll-margin-top: 92px; }
+.anchor { color: inherit; }
+.anchor:hover::after { content: " #"; color: var(--line); font-size: .7em; }
 body {
   margin: 0;
   font-family: var(--sans);
@@ -324,6 +327,27 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .thanks .tick { width: 56px; height: 56px; border-radius: 50%; background: #e6f2ea; color: var(--ok); display: grid; place-items: center; margin: 0 auto 20px; }
 .thanks .tick svg { width: 26px; height: 26px; }
 .order-no { font-family: var(--serif); font-size: 1.3rem; }
+
+/* ---------- Image loading ---------- */
+@keyframes ne-spin { to { transform: rotate(360deg); } }
+@keyframes ne-fade { from { opacity: 0; } to { opacity: 1; } }
+.img-loading { position: relative; background: var(--paper-deep); }
+.img-loading::before {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; z-index: 1;
+  border-radius: 50%; border: 1.5px solid rgba(27,27,25,.12); border-top-color: rgba(27,27,25,.55);
+  animation: ne-spin .8s linear infinite;
+}
+.img-loading > img { opacity: 0; }
+.is-loaded > img { animation: ne-fade .35s ease-out; }
+.hero__art > a { display: block; }
+.band--ink .img-loading, .lb .img-loading { background: transparent; }
+.lb.is-loading .lb__stage::before {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 28px; height: 28px; margin: -14px 0 0 -14px; z-index: 0;
+  border-radius: 50%; border: 1.5px solid rgba(244,242,236,.15); border-top-color: rgba(244,242,236,.85);
+  animation: ne-spin .8s linear infinite;
+}
+.lb.is-loading .lb__img { opacity: .35; }
+@media (prefers-reduced-motion: reduce) { .img-loading::before, .lb.is-loading .lb__stage::before { animation-duration: 1.6s; } .is-loaded > img { animation: none; } }
 
 /* ---------- Toast ---------- */
 .toast { position: fixed; left: 50%; bottom: 28px; transform: translate(-50%, 20px); z-index: 120; background: var(--ink); color: var(--paper); padding: 12px 18px; border-radius: 999px; font-size: .9rem; display: flex; align-items: center; gap: 14px; opacity: 0; pointer-events: none; transition: all .3s var(--ease); box-shadow: var(--shadow); }

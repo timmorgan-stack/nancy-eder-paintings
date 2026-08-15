@@ -24,6 +24,10 @@ Then open http://localhost:8791/ (a `nancy` entry is also in `.claude/launch.jso
 | `checkout.html` | Contact + shipping form, order summary, **payment placeholder** (`#payment-element`) |
 | `thanks.html` | Order confirmation, reads `sessionStorage.ne_last_order` |
 
+## Deep links / anchors
+Home: `#featured`, `#sketchbooks`, `#buying`, `#newsletter`. Work overview: `gallery.html#cuba|france|spain|portugal|italy|england|norway`
+(anchors are honoured after the JS render, with an offset for the sticky header). Trip view: `gallery.html?series=portugal`.
+
 ## Lightbox
 `js/lightbox.js` — any `[data-lightbox="<id>"]` opens it over the current gallery set. Prev/next
 (buttons, ← →, swipe), Esc/backdrop/swipe-down to close, click image to zoom (scroll to pan),

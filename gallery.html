@@ -203,9 +203,9 @@
         overviewWrap.innerHTML = cat.series.map(s => {
           const all = sortList(bySeries(s.id));
           const some = all.slice(0, 6);
-          return `<section class="overview-block reveal">
+          return `<section class="overview-block reveal" id="${s.id}">
             <div class="section-head" style="margin-bottom:16px">
-              <div><h2 style="margin:0 0 .2em">${s.name}</h2><p class="muted" style="margin:0">${s.blurb} · ${all.length} works</p></div>
+              <div><h2 style="margin:0 0 .2em"><a class="anchor" href="gallery.html#${s.id}">${s.name}</a></h2><p class="muted" style="margin:0">${s.blurb} · ${all.length} works</p></div>
               <a class="link link-arrow overview-more" href="gallery.html?series=${s.id}" data-series="${s.id}">View all ${all.length}</a>
             </div>
             <div class="grid grid--row" data-overview-grid="${s.id}">${some.map(a => NE.cardHTML(a)).join('')}</div>
@@ -276,6 +276,7 @@
         NE.revealAll();
       }
       render();
+      NE.jumpToHash();
 
       // Re-snap the page size if a resize changes the column count
       let lastCols = columns(), rt;
