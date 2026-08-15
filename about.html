@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Nancy Eder</title>
+  <meta name="description" content="About the artist Nancy Eder: ink and watercolour sketchbook painter working on location. Shipping, returns and framing information.">
+  <link rel="icon" href="img/site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="about">
+  <div data-region="header"></div>
+
+  <main data-region="main">
+    <section class="section" data-hook="about">
+      <div class="wrap about">
+        <figure class="about__art reveal">
+          <img src="img/large/5626.jpg" alt="Painting of a walled garden with a house beyond, ink and watercolour" width="1800" height="1350">
+          <figcaption>Paula's Jardim, Porto — July 2016. Ink and watercolour on paper.</figcaption>
+        </figure>
+        <div class="about__body reveal">
+          <div class="eyebrow">About the artist</div>
+          <h1>Nancy Eder</h1>
+          <!-- PLACEHOLDER COPY — replace with Nancy's own statement -->
+          <p>I paint where I am. A sketchbook, a pen and a small tin of watercolours are enough to hold a place for an hour — long enough to notice how the roofs stack up a hillside, how the sea changes colour past the harbour wall, how a courgette leaf is really a dozen greens.</p>
+          <p>The paintings on this site come from years of travelling sketchbooks: coast and countryside across Europe and the Caribbean, market stalls and gardens, boats and back streets. Each is drawn directly in ink, without pencil first, then washed with colour on the spot. Nothing is reworked later — what you see is what the day gave.</p>
+          <p>Works are sold as originals only. Every painting is signed and dated on the front and comes with a short note about where and when it was made.</p>
+          <div class="stats">
+            <div><strong data-stat-count>—</strong><span>original works online</span></div>
+            <div><strong data-stat-series>—</strong><span>sketchbook trips</span></div>
+            <div><strong>7</strong><span>countries, 2012–2016</span></div>
+          </div>
+          <div class="hero__actions">
+            <a class="btn" href="gallery.html">Browse the work</a>
+            <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shipping" class="section band" data-hook="shipping">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">The practical part</div><h2 style="margin:0">Shipping, framing &amp; returns</h2></div></div>
+        <div class="trio">
+          <div class="reveal">
+            <h3>Shipping</h3>
+            <p>Original works ship unframed, flat between archival boards, in a rigid mailer — insured and tracked. Flat-rate shipping within the United States is $25; international shipping is quoted at checkout or on request. Orders are dispatched within 5 working days.</p>
+          </div>
+          <div class="reveal">
+            <h3>Framing</h3>
+            <p>Paintings are on heavy sketchbook paper and sit well in a simple float mount behind UV-protective glass. Standard sizes are listed on each work so an off-the-shelf frame will usually do; framed delivery can be arranged for local collectors.</p>
+          </div>
+          <div class="reveal">
+            <h3>Returns</h3>
+            <p>If a painting isn't right in the room, return it in its original packaging within 14 days of delivery for a full refund of the purchase price. Please email first so we can look out for it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-region="footer"></div>
+
+  <script src="data/catalog.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    NE.loadCatalog().then(cat => {
+      document.querySelector('[data-stat-count]').textContent = cat.artworks.length;
+      document.querySelector('[data-stat-series]').textContent = cat.series.length;
+    });
+  </script>
+</body>
+</html>

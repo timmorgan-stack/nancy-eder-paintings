@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nancy Eder — Paintings</title>
+  <meta name="description" content="Original ink and watercolour sketchbook paintings by Nancy Eder, made on location. Browse the gallery and purchase original works online.">
+  <meta property="og:title" content="Nancy Eder — Paintings">
+  <meta property="og:description" content="Original ink and watercolour paintings, made on location. Available to purchase.">
+  <meta property="og:image" content="img/large/5583.jpg">
+  <link rel="icon" href="img/site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home">
+  <div data-region="header"></div>
+
+  <main data-region="main">
+    <!-- Hero -->
+    <section class="hero" data-hook="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy reveal">
+          <div class="eyebrow">Ink &amp; watercolour · painted on location</div>
+          <h1>Places, drawn<br>as they were seen.</h1>
+          <p class="lede">Nancy Eder paints in a travelling sketchbook — coastlines, hill towns, gardens and kitchen tables, set down quickly in ink and washed with colour before the light moves on. Original works are available to buy.</p>
+          <div class="hero__actions">
+            <a class="btn" href="gallery.html">Browse the work</a>
+            <a class="btn btn--ghost" href="gallery.html?status=available">Available now</a>
+          </div>
+        </div>
+        <div class="hero__art reveal">
+          <a href="artwork.html?id=5583" aria-label="View featured artwork"><img src="img/large/5583.jpg" alt="Featured painting: rocky coastline in ink and watercolour" width="1800" height="1348" fetchpriority="high"></a>
+          <div class="hero__caption" data-hero-caption></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section" data-hook="featured">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Selected works</div>
+            <h2>Featured paintings</h2>
+          </div>
+          <a class="link link-arrow" href="gallery.html">View all work</a>
+        </div>
+        <div class="grid" data-featured-grid></div>
+      </div>
+    </section>
+
+    <!-- Series -->
+    <section class="section section--tight band" data-hook="series">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Browse by trip</div>
+            <h2>Sketchbooks</h2>
+          </div>
+        </div>
+        <div class="series-strip" data-series-strip></div>
+      </div>
+    </section>
+
+    <!-- Buying -->
+    <section class="section" data-hook="buying">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Collecting</div>
+            <h2>Buying an original</h2>
+          </div>
+        </div>
+        <div class="trio">
+          <div class="reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v11H4zM4 11h16"/><path d="M8 4v3M16 4v3"/></svg>
+            <h3>One of a kind</h3>
+            <p>Every painting is a unique original on paper, signed and dated by the artist. When it's gone, it's gone.</p>
+          </div>
+          <div class="reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h13v9H3zM16 11h3l2 3v3h-5z"/><circle cx="7" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/></svg>
+            <h3>Carefully shipped</h3>
+            <p>Works ship flat between archival boards, insured and tracked. Free collection can be arranged locally.</p>
+          </div>
+          <div class="reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+            <h3>Commissions welcome</h3>
+            <p>A favourite view, a house, a garden — Nancy takes a small number of commissions each year. <a class="link" href="contact.html">Get in touch</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="section band--ink" data-hook="newsletter">
+      <div class="wrap two-col" style="align-items:center">
+        <div>
+          <div class="eyebrow" style="color:rgba(248,246,241,.55)">Stay in touch</div>
+          <h2 style="margin-bottom:.3em">New paintings, first.</h2>
+          <p class="muted" style="margin:0">An occasional note when a new sketchbook is scanned and put up for sale. No noise.</p>
+        </div>
+        <form class="newsletter" data-hook="newsletter-form" novalidate>
+          <label class="visually-hidden" for="nl-email">Email address</label>
+          <input id="nl-email" type="email" name="email" placeholder="you@example.com" required>
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div data-region="footer"></div>
+
+  <script src="data/catalog.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    (async () => {
+      const cat = await NE.loadCatalog();
+      const hero = NE.getArt('5583');
+      if (hero) document.querySelector('[data-hero-caption]').textContent = `${hero.title}, ${hero.date} · ${hero.medium}, ${hero.size}`;
+
+      // Featured grid
+      const featured = cat.artworks.filter(a => a.featured).slice(0, 8);
+      const grid = document.querySelector('[data-featured-grid]');
+      grid.innerHTML = featured.map(a => NE.cardHTML(a)).join('');
+      NE.lightbox.setItems(featured);
+      NE.watchGrid(grid);
+
+      // Series tiles: first featured (or first) work in each series
+      const strip = document.querySelector('[data-series-strip]');
+      strip.innerHTML = cat.series.map(s => {
+        const works = cat.artworks.filter(a => a.series === s.id);
+        const cover = works.find(a => a.featured) || works[0];
+        return `<a class="series-tile reveal" href="gallery.html?series=${s.id}"><img src="${cover.image.thumb}" alt="" loading="lazy"><span>${s.name} <small class="muted">· ${works.length} works</small></span></a>`;
+      }).join('');
+      NE.revealAll();
+
+      // Newsletter (placeholder handler — wire to codanomix mailer later)
+      document.querySelector('[data-hook="newsletter-form"]').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = e.target.email;
+        if (!input.checkValidity()) { input.focus(); NE.toast('Please enter a valid email address.'); return; }
+        e.target.reset();
+        NE.toast('Thanks — you\'re on the list.');
+      });
+    })();
+  </script>
+</body>
+</html>

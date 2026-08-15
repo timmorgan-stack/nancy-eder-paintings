@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Nancy Eder</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="img/site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="checkout">
+  <div data-region="header"></div>
+
+  <main data-region="main">
+    <section class="section section--tight" data-hook="checkout">
+      <div class="wrap">
+        <div class="eyebrow">Secure checkout</div>
+        <h1>Checkout</h1>
+
+        <!-- The whole checkout is one <form>. On integration, keep the field names — they map 1:1
+             to a typical order record (customer + shipping address) — and replace the payment
+             placeholder (data-hook="payment-element") with the provider's mounted element. -->
+        <form class="cart-layout" data-hook="checkout-form" novalidate>
+          <div class="checkout-steps">
+            <section class="checkout-step">
+              <h3><span class="n">1</span>Contact</h3>
+              <div class="form">
+                <div class="form-row">
+                  <div class="field"><label for="co-first">First name</label><input id="co-first" name="firstName" autocomplete="given-name" required></div>
+                  <div class="field"><label for="co-last">Last name</label><input id="co-last" name="lastName" autocomplete="family-name" required></div>
+                </div>
+                <div class="form-row">
+                  <div class="field"><label for="co-email">Email</label><input id="co-email" name="email" type="email" autocomplete="email" required><div class="hint">Your receipt and tracking go here.</div></div>
+                  <div class="field"><label for="co-phone">Phone <span class="muted">(for the courier)</span></label><input id="co-phone" name="phone" type="tel" autocomplete="tel"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="checkout-step">
+              <h3><span class="n">2</span>Shipping address</h3>
+              <div class="form">
+                <div class="field"><label for="co-addr1">Address</label><input id="co-addr1" name="address1" autocomplete="address-line1" required></div>
+                <div class="field"><label for="co-addr2">Apartment, suite, etc. <span class="muted">(optional)</span></label><input id="co-addr2" name="address2" autocomplete="address-line2"></div>
+                <div class="form-row">
+                  <div class="field"><label for="co-city">City</label><input id="co-city" name="city" autocomplete="address-level2" required></div>
+                  <div class="field"><label for="co-state">State</label><input id="co-state" name="state" autocomplete="address-level1" required></div>
+                </div>
+                <div class="form-row">
+                  <div class="field"><label for="co-zip">ZIP / Postal code</label><input id="co-zip" name="postalCode" autocomplete="postal-code" required></div>
+                  <div class="field"><label for="co-country">Country</label>
+                    <select id="co-country" name="country" autocomplete="country" data-country>
+                      <option value="US" selected>United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="OTHER">Other (shipping quoted)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field"><label for="co-notes">Delivery notes <span class="muted">(optional)</span></label><textarea id="co-notes" name="notes" style="min-height:80px"></textarea></div>
+              </div>
+            </section>
+
+            <section class="checkout-step">
+              <h3><span class="n">3</span>Payment</h3>
+              <!-- INTEGRATION POINT: mount the payment provider's element here (e.g. Stripe Payment Element).
+                   Keep the id/hook; the submit handler below reads data-payment-ready to gate submission. -->
+              <div class="pay-placeholder" id="payment-element" data-hook="payment-element" data-payment-ready="false">
+                <div class="icons"><span>VISA</span><span>MC</span><span>AMEX</span><span>PAY</span></div>
+                <div>Card, Apple Pay and Google Pay are accepted.<br>Payment fields will appear here once the payment provider is connected.</div>
+              </div>
+              <p class="note" style="margin-top:14px">Payments are processed securely by the payment provider; card details never touch this site.</p>
+              <div class="form-msg form-msg--err" data-form-msg hidden style="margin-top:14px"></div>
+            </section>
+          </div>
+
+          <aside class="summary" data-summary>
+            <h3>Order summary</h3>
+            <ul class="mini-lines" data-mini-lines></ul>
+            <dl>
+              <div class="row"><dt>Subtotal</dt><dd data-subtotal></dd></div>
+              <div class="row"><dt>Shipping</dt><dd data-shipping></dd></div>
+              <div class="row row--total"><dt>Total</dt><dd data-total></dd></div>
+            </dl>
+            <button class="btn btn--accent btn--block" type="submit" data-pay-btn>Pay <span data-pay-amount></span></button>
+            <p class="note">By placing this order you agree to the <a class="link" href="about.html#shipping">shipping &amp; returns policy</a>.</p>
+            <p class="note"><a class="link" href="cart.html">← Back to cart</a></p>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div data-region="footer"></div>
+
+  <script src="data/catalog.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    (async () => {
+      await NE.loadCatalog();
+      const form = document.querySelector('[data-hook="checkout-form"]');
+      const t = NE.cart.totals();
+      if (!t.items.length) { location.replace('cart.html'); return; }
+
+      form.querySelector('[data-mini-lines]').innerHTML = t.items.map(a => `
+        <li><img src="${a.image.thumb}" alt=""><span class="grow">${a.title}<br><span class="muted" style="font-size:.78rem">${a.size}</span></span><span>${NE.money(a.price)}</span></li>`).join('');
+
+      const country = form.querySelector('[data-country]');
+      function totals() {
+        const intl = country.value !== 'US';
+        const shipping = intl ? null : t.shipping;
+        form.querySelector('[data-subtotal]').textContent = NE.money(t.subtotal);
+        form.querySelector('[data-shipping]').textContent = intl ? 'Quoted after order' : NE.money(shipping);
+        const total = t.subtotal + (shipping || 0);
+        form.querySelector('[data-total]').textContent = NE.money(total) + (intl ? ' + shipping' : '');
+        form.querySelector('[data-pay-amount]').textContent = NE.money(total);
+      }
+      country.addEventListener('change', totals);
+      totals();
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const msg = form.querySelector('[data-form-msg]');
+        let ok = true, first = null;
+        form.querySelectorAll('.field').forEach(f => {
+          const inp = f.querySelector('input,textarea,select');
+          const bad = inp.required && !inp.checkValidity();
+          f.classList.toggle('is-invalid', bad); if (bad) { ok = false; first = first || inp; }
+        });
+        if (!ok) { msg.hidden = false; msg.textContent = 'Please complete the highlighted fields.'; first.focus(); return; }
+
+        // INTEGRATION POINT: hand the order (customer + address + cart ids) to the payment flow.
+        // Until then we simulate a successful payment so the confirmation page can be styled and tested.
+        const order = {
+          id: 'NE-' + Date.now().toString(36).toUpperCase(),
+          customer: Object.fromEntries(new FormData(form).entries()),
+          items: t.items.map(a => ({ id: a.id, title: a.title, price: a.price })),
+          subtotal: t.subtotal, shipping: country.value === 'US' ? t.shipping : null, currency: 'USD',
+          placedAt: new Date().toISOString()
+        };
+        sessionStorage.setItem('ne_last_order', JSON.stringify(order));
+        NE.cart.clear();
+        location.href = 'thanks.html';
+      });
+    })();
+  </script>
+</body>
+</html>
