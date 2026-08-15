@@ -15,8 +15,8 @@
     <section class="section" data-hook="about">
       <div class="wrap about">
         <figure class="about__art reveal">
-          <img src="img/large/5626.jpg" alt="Painting of a walled garden with a house beyond, ink and watercolour" width="1800" height="1350">
-          <figcaption>Paula's Jardim, Porto — July 2016. Ink and watercolour on paper.</figcaption>
+          <a href="artwork.html?id=5626" data-about-link><img src="img/large/5626.jpg" alt="Painting by Nancy Eder" width="1800" height="1350" data-about-img></a>
+          <figcaption data-about-caption>Paula's Jardim, Porto — July 2016. Ink and watercolour on paper.</figcaption>
         </figure>
         <div class="about__body reveal">
           <div class="eyebrow">About the artist</div>
@@ -66,6 +66,15 @@
   <script src="js/lightbox.js"></script>
   <script>
     NE.loadCatalog().then(cat => {
+      // A different painting each visit (from the featured, unsold works)
+      const pool = cat.artworks.filter(a => a.featured && a.status !== 'sold');
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+      if (pick) {
+        const img = document.querySelector('[data-about-img]');
+        img.src = pick.image.large; img.width = pick.image.w; img.height = pick.image.h; img.alt = `${pick.title} — ${pick.medium}`;
+        document.querySelector('[data-about-link]').href = `artwork.html?id=${pick.id}`;
+        document.querySelector('[data-about-caption]').textContent = `${pick.title}, ${pick.place} — ${pick.date}. ${pick.medium}.`;
+      }
       document.querySelector('[data-stat-count]').textContent = cat.artworks.length;
       document.querySelector('[data-stat-series]').textContent = cat.series.length;
     });
