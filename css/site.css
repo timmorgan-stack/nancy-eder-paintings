@@ -84,8 +84,8 @@ p  { margin: 0 0 1em; }
 .link-arrow::after { content: " →"; }
 
 /* ---------- Header ---------- */
+[data-region="header"] { position: sticky; top: 0; z-index: 50; }
 .site-header {
-  position: sticky; top: 0; z-index: 50;
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
@@ -395,7 +395,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .trip-tile:hover img { transform: scale(1.04); }
 .trip-tile.is-active { box-shadow: 0 0 0 2px var(--ink); }
 
-.trip-bar { position: sticky; top: 72px; z-index: 40; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
+.trip-bar { position: sticky; top: 73px; z-index: 40; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
 .trip-bar[hidden] { display: none; }
 .trip-bar__inner { display: flex; align-items: center; gap: 16px; }
 .trip-bar__chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; flex: 1; min-width: 0; }
