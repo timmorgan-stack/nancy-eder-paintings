@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work — Nancy Eder</title>
-  <meta name="description" content="Browse original ink and watercolour paintings by Nancy Eder. Filter by series and availability; every work is available to purchase online.">
+  <meta name="description" content="Browse Nancy Eder's sketchbooks by trip — Cuba, France, Spain, Portugal, Italy, England and Norway — or search the paintings. Originals available to purchase.">
   <link rel="icon" href="img/site/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/site.css">
 </head>
@@ -12,35 +12,80 @@
   <div data-region="header"></div>
 
   <main data-region="main">
-    <section class="section section--tight" data-hook="gallery">
+    <!-- Intro, search, sketchbook tiles -->
+    <section class="section section--tight" data-hook="gallery-intro">
       <div class="wrap">
-        <div class="section-head" style="margin-bottom:24px">
+        <div class="section-head" style="margin-bottom:20px">
           <div>
             <div class="eyebrow">Gallery</div>
             <h1 style="margin:0">Work</h1>
           </div>
-          <p class="lede" style="margin:0;max-width:44ch;font-size:1rem">Click any painting to open it large; use the arrow keys or swipe to move through the set. Click the enlarged image once more to zoom in.</p>
+          <p class="lede" style="margin:0;max-width:46ch;font-size:1rem">The paintings are organised by sketchbook — one for each trip. Pick a sketchbook to browse it page by page, search for a place or subject, or scroll the overview for a taste of each.</p>
         </div>
 
-        <div class="filters" role="toolbar" aria-label="Filter works" data-hook="gallery-filters">
-          <div data-series-chips></div>
-          <div class="spacer"></div>
-          <select data-status aria-label="Availability">
-            <option value="all">All works</option>
-            <option value="available">Available</option>
-            <option value="sold">Sold</option>
-          </select>
-          <select data-sort aria-label="Sort">
-            <option value="default">Featured first</option>
-            <option value="price-asc">Price: low to high</option>
-            <option value="price-desc">Price: high to low</option>
-            <option value="newest">Newest</option>
-          </select>
-        </div>
-        <div class="result-count" data-count aria-live="polite" style="margin-bottom:20px"></div>
+        <form class="search" role="search" data-search-form data-hook="gallery-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="q">Search the paintings</label>
+          <input id="q" name="q" type="search" placeholder="Search paintings — e.g. Porto, garden, boats, 2014…" autocomplete="off" data-search>
+          <button type="button" class="search__clear" data-search-clear aria-label="Clear search" hidden>×</button>
+        </form>
 
+        <div class="trip-tiles" data-trip-tiles></div>
+      </div>
+    </section>
+
+    <!-- Sticky trip switcher, appears once the tiles have scrolled away -->
+    <div class="trip-bar" data-trip-bar hidden>
+      <div class="wrap trip-bar__inner">
+        <div class="trip-bar__chips" data-trip-chips></div>
+        <form class="search search--compact" role="search" data-search-form>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="q2">Search</label>
+          <input id="q2" type="search" placeholder="Search…" autocomplete="off" data-search>
+          <button type="button" class="search__clear" data-search-clear aria-label="Clear search" hidden>×</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Overview: a row per trip -->
+    <section class="section section--tight" data-overview hidden data-hook="gallery-overview">
+      <div class="wrap" data-overview-wrap></div>
+    </section>
+
+    <!-- Single trip OR search results, paginated -->
+    <section class="section section--tight" data-trip hidden data-hook="gallery-trip">
+      <div class="wrap">
+        <header class="trip-head">
+          <div>
+            <div class="eyebrow" data-trip-eyebrow>Sketchbook</div>
+            <h2 data-trip-title style="margin:0 0 .3em"></h2>
+            <p class="muted" data-trip-blurb style="margin:0"></p>
+          </div>
+          <div class="filters" style="margin:0" role="toolbar" aria-label="Filter works">
+            <select data-status aria-label="Availability">
+              <option value="all">All works</option>
+              <option value="available">Available</option>
+              <option value="sold">Sold</option>
+            </select>
+            <select data-per aria-label="Works per page">
+              <option value="10">10 per page</option>
+              <option value="20">20 per page</option>
+              <option value="40">40 per page</option>
+              <option value="all">Show all</option>
+            </select>
+            <select data-sort aria-label="Sort">
+              <option value="default">Featured first</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </header>
+        <div class="result-count" data-count aria-live="polite"></div>
         <div class="grid" data-grid></div>
-        <div class="empty" data-empty hidden>No works match those filters. <a class="link" href="gallery.html">Show everything</a></div>
+        <div class="empty" data-empty hidden>Nothing matches. Try a place (“Céret”, “Porto”), a subject (“market”, “garden”, “boats”) or a year.</div>
+        <nav class="pager" data-pager aria-label="Pages"></nav>
+        <nav class="trip-next" data-trip-next aria-label="Other sketchbooks"></nav>
       </div>
     </section>
   </main>
@@ -53,52 +98,178 @@
   <script>
     (async () => {
       const cat = await NE.loadCatalog();
-      const chips = document.querySelector('[data-series-chips]');
-      const statusSel = document.querySelector('[data-status]');
-      const sortSel = document.querySelector('[data-sort]');
-      const grid = document.querySelector('[data-grid]');
-      const count = document.querySelector('[data-count]');
-      const empty = document.querySelector('[data-empty]');
+      const PER_KEY = 'ne_per_page';
+      const $ = (s, r = document) => r.querySelector(s);
+      const tiles = $('[data-trip-tiles]'), bar = $('[data-trip-bar]'), chips = $('[data-trip-chips]');
+      const overview = $('[data-overview]'), overviewWrap = $('[data-overview-wrap]');
+      const trip = $('[data-trip]'), grid = $('[data-grid]'), pager = $('[data-pager]'), tripNext = $('[data-trip-next]');
+      const statusSel = $('[data-status]'), sortSel = $('[data-sort]'), perSel = $('[data-per]');
+      const searchInputs = [...document.querySelectorAll('[data-search]')], searchClears = [...document.querySelectorAll('[data-search-clear]')];
+      const setSearchValue = (v) => searchInputs.forEach(i => { if (i.value !== v) i.value = v; });
 
       const state = {
         series: NE.qs('series') || 'all',
         status: NE.qs('status') || 'all',
-        sort: NE.qs('sort') || 'default'
+        sort: NE.qs('sort') || 'default',
+        q: (NE.qs('q') || '').trim(),
+        per: NE.qs('per') || localStorage.getItem(PER_KEY) || '10',
+        page: Math.max(1, parseInt(NE.qs('page') || '1', 10))
       };
-      statusSel.value = state.status; sortSel.value = state.sort;
+      if (![...perSel.options].some(o => o.value === state.per)) state.per = '10';
+      statusSel.value = state.status; sortSel.value = state.sort; perSel.value = state.per; setSearchValue(state.q);
+      const perPage = () => state.per === 'all' ? Infinity : Number(state.per);
 
-      chips.innerHTML = [{ id: 'all', name: 'All' }, ...cat.series]
-        .map(s => `<button class="chip" data-series="${s.id}" aria-pressed="${state.series === s.id}">${s.name}</button>`).join('');
-      chips.style.display = 'contents';
-
-      let current = [];
-      function apply() {
-        let list = cat.artworks.filter(a =>
-          (state.series === 'all' || a.series === state.series) &&
-          (state.status === 'all' || a.status === state.status));
+      const bySeries = (id) => cat.artworks.filter(a => a.series === id);
+      const cover = (id) => { const w = bySeries(id); return w.find(a => a.featured) || w[0]; };
+      const sortList = (list) => {
+        list = list.slice();
         if (state.sort === 'price-asc') list.sort((a, b) => a.price - b.price);
         else if (state.sort === 'price-desc') list.sort((a, b) => b.price - a.price);
         else if (state.sort === 'newest') list.sort((a, b) => (b.year - a.year) || (Number(b.id) - Number(a.id)));
         else list.sort((a, b) => (b.featured - a.featured));
+        return list;
+      };
 
-        current = list;
-        grid.innerHTML = list.map(a => NE.cardHTML(a)).join('');
-        NE.lightbox.setItems(list);
-        NE.watchGrid(grid);
-        count.textContent = `${list.length} ${list.length === 1 ? 'work' : 'works'}`;
-        empty.hidden = list.length > 0;
-        NE.setQs(state);
-        chips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.series === state.series));
+      /* ---- Search: every word must match somewhere in title / place / trip / date / medium / ref ---- */
+      const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      const hay = new Map(cat.artworks.map(a => [a.id, norm([a.title, a.place, a.seriesName, a.date, a.year, a.medium, 'NE-' + a.id, a.status].join(' '))]));
+      const search = (q, pool = cat.artworks) => {
+        const words = norm(q).split(/\s+/).filter(Boolean);
+        return pool.filter(a => words.every(w => hay.get(a.id).includes(w)));
+      };
+
+      /* ---- Sketchbook tiles + sticky chips ---- */
+      tiles.innerHTML = cat.series.map(s => {
+        const c = cover(s.id), n = bySeries(s.id).length;
+        return `<a class="trip-tile reveal" href="gallery.html?series=${s.id}" data-series="${s.id}">
+          <img src="${c.image.thumb}" alt="" loading="lazy">
+          <div class="trip-tile__body"><strong>${s.name}</strong><span>${n} works · ${s.blurb.split(',').slice(-1)[0].trim()}</span></div></a>`;
+      }).join('');
+      chips.innerHTML = [{ id: 'all', name: 'Overview' }, ...cat.series]
+        .map(s => `<button class="chip" data-series="${s.id}">${s.name}</button>`).join('');
+
+      /* ---- State changes ---- */
+      function go(patch) {
+        Object.assign(state, patch);
+        if (!('page' in patch)) state.page = 1;
+        render();
+      }
+      const scrollToResults = () => window.scrollTo({ top: Math.max(0, trip.getBoundingClientRect().top + scrollY - 88), behavior: 'smooth' });
+
+      document.addEventListener('click', (e) => {
+        const t = e.target.closest('[data-series]');
+        if (!t || !t.matches('.trip-tile, .chip, .trip-next a, .overview-more')) return;
+        e.preventDefault();
+        go({ series: t.dataset.series });
+        if (state.series === 'all' && !state.q) window.scrollTo({ top: 0, behavior: 'smooth' }); else scrollToResults();
+      });
+      statusSel.addEventListener('change', () => go({ status: statusSel.value }));
+      sortSel.addEventListener('change', () => go({ sort: sortSel.value }));
+      perSel.addEventListener('change', () => { localStorage.setItem(PER_KEY, perSel.value); go({ per: perSel.value }); });
+      pager.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-page]'); if (!b) return;
+        go({ page: Number(b.dataset.page) }); scrollToResults();
+      });
+
+      let searchTimer;
+      searchInputs.forEach(inp => {
+        inp.addEventListener('input', () => {
+          setSearchValue(inp.value);
+          clearTimeout(searchTimer);
+          searchTimer = setTimeout(() => go({ q: inp.value.trim() }), 220);
+        });
+      });
+      document.querySelectorAll('[data-search-form]').forEach(f => f.addEventListener('submit', (e) => {
+        e.preventDefault(); clearTimeout(searchTimer); go({ q: f.querySelector('[data-search]').value.trim() }); if (state.q) scrollToResults();
+      }));
+      searchClears.forEach(b => b.addEventListener('click', () => { setSearchValue(''); go({ q: '' }); b.closest('form').querySelector('[data-search]').focus(); }));
+
+      /* ---- Renderers ---- */
+      function renderOverview() {
+        overviewWrap.innerHTML = cat.series.map(s => {
+          const all = sortList(bySeries(s.id));
+          const some = all.slice(0, 6);
+          return `<section class="overview-block reveal">
+            <div class="section-head" style="margin-bottom:16px">
+              <div><h2 style="margin:0 0 .2em">${s.name}</h2><p class="muted" style="margin:0">${s.blurb} · ${all.length} works</p></div>
+              <a class="link link-arrow overview-more" href="gallery.html?series=${s.id}" data-series="${s.id}">View all ${all.length}</a>
+            </div>
+            <div class="grid grid--row" data-overview-grid="${s.id}">${some.map(a => NE.cardHTML(a)).join('')}</div>
+            <div class="overview-foot"><a class="btn btn--ghost btn--sm overview-more" href="gallery.html?series=${s.id}" data-series="${s.id}">Open the ${s.name} sketchbook →</a></div>
+          </section>`;
+        }).join('');
+        overviewWrap.querySelectorAll('[data-overview-grid]').forEach(g => NE.watchGrid(g));
+        NE.lightbox.setItems(cat.artworks);
       }
 
-      chips.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (!c) return; state.series = c.dataset.series; apply(); });
-      statusSel.addEventListener('change', () => { state.status = statusSel.value; apply(); });
-      sortSel.addEventListener('change', () => { state.sort = sortSel.value; apply(); });
-      apply();
+      function renderList(list, { title, blurb, eyebrow, s }) {
+        list = sortList(list.filter(a => state.status === 'all' || a.status === state.status));
+        const per = perPage();
+        const pages = Math.max(1, Math.ceil(list.length / per));
+        state.page = Math.min(state.page, pages);
+        const start = (state.page - 1) * per;
+        const slice = list.slice(start, start + per);
 
-      // Deep link: gallery.html?view=<id> opens the lightbox on that work
+        $('[data-trip-title]').textContent = title;
+        $('[data-trip-blurb]').innerHTML = blurb;
+        $('[data-trip-eyebrow]').textContent = eyebrow;
+        $('[data-count]').textContent = list.length ? (pages > 1 ? `Showing ${start + 1}–${Math.min(start + per, list.length)} of ${list.length} works` : `${list.length} ${list.length === 1 ? 'work' : 'works'}`) : '';
+        grid.innerHTML = slice.map(a => NE.cardHTML(a)).join('');
+        $('[data-empty]').hidden = list.length > 0;
+        NE.lightbox.setItems(list);          // arrows move through the whole set, not just this page
+        NE.watchGrid(grid);
+
+        pager.innerHTML = pages > 1 ? `
+          <button class="pager__btn" data-page="${state.page - 1}" ${state.page === 1 ? 'disabled' : ''} aria-label="Previous page">←</button>
+          ${Array.from({ length: pages }, (_, i) => `<button class="pager__btn ${i + 1 === state.page ? 'is-current' : ''}" data-page="${i + 1}" ${i + 1 === state.page ? 'aria-current="page"' : ''}>${i + 1}</button>`).join('')}
+          <button class="pager__btn" data-page="${state.page + 1}" ${state.page === pages ? 'disabled' : ''} aria-label="Next page">→</button>` : '';
+
+        if (s) {
+          const i = cat.series.indexOf(s), prev = cat.series[i - 1], next = cat.series[i + 1];
+          tripNext.innerHTML = `
+            ${prev ? `<a href="gallery.html?series=${prev.id}" data-series="${prev.id}" class="trip-next__link"><img src="${cover(prev.id).image.thumb}" alt=""><span><small>Previous sketchbook</small>${prev.name}</span></a>` : '<span></span>'}
+            <a href="gallery.html" data-series="all" class="trip-next__all">All sketchbooks</a>
+            ${next ? `<a href="gallery.html?series=${next.id}" data-series="${next.id}" class="trip-next__link trip-next__link--r"><span><small>Next sketchbook</small>${next.name}</span><img src="${cover(next.id).image.thumb}" alt=""></a>` : '<span></span>'}`;
+        } else {
+          tripNext.innerHTML = `<span></span><a href="gallery.html" data-series="all" class="trip-next__all overview-more">Back to all sketchbooks</a><span></span>`;
+        }
+      }
+
+      function render() {
+        const searching = state.q.length > 0;
+        const s = cat.series.find(x => x.id === state.series);
+        const inTrip = !searching && !!s;
+        if (!s) state.series = 'all';
+        overview.hidden = inTrip || searching; trip.hidden = !(inTrip || searching);
+        searchClears.forEach(b => b.hidden = !searching);
+        tiles.querySelectorAll('.trip-tile').forEach(t => t.classList.toggle('is-active', t.dataset.series === state.series));
+        chips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.series === state.series));
+
+        if (searching) {
+          const list = search(state.q, s ? bySeries(s.id) : cat.artworks);
+          const allHits = s ? search(state.q).length : list.length;
+          const scope = s
+            ? `Searching within the ${s.name} sketchbook${allHits > list.length ? ` — ${allHits} match${allHits === 1 ? '' : 'es'} across all sketchbooks · <a class="link overview-more" href="gallery.html?q=${encodeURIComponent(state.q)}" data-series="all">search everything</a>` : ''}.`
+            : 'Searching all sketchbooks — matched on title, place, sketchbook, date or reference.';
+          renderList(list, { title: `Results for “${state.q}”${s ? ` in ${s.name}` : ''}`, blurb: scope, eyebrow: 'Search', s: s || null });
+        } else if (inTrip) {
+          renderList(bySeries(s.id), { title: s.name, blurb: s.blurb, eyebrow: `Sketchbook ${cat.series.indexOf(s) + 1} of ${cat.series.length}`, s });
+        } else {
+          renderOverview();
+        }
+        NE.setQs({ series: state.series, q: state.q || null, status: state.status, sort: state.sort, per: state.per !== '10' ? state.per : null, page: state.page > 1 ? state.page : null });
+        document.title = searching ? `“${state.q}”${s ? ' in ' + s.name : ''} — Nancy Eder` : inTrip ? `${s.name} sketchbook — Nancy Eder` : 'Work — Nancy Eder';
+        NE.revealAll();
+      }
+      render();
+
+      // Sticky trip bar appears once the tiles have scrolled away
+      const onScroll = () => { bar.hidden = tiles.getBoundingClientRect().bottom > 80; };
+      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+      // Deep link: ?view=<id> opens the lightbox on that work within its trip
       const view = NE.qs('view');
-      if (view) { const i = current.findIndex(a => a.id === view); if (i > -1) NE.lightbox.open(current, i); }
+      if (view) { const a = NE.getArt(view); if (a) { const set = bySeries(a.series); NE.lightbox.open(set, set.indexOf(a)); } }
     })();
   </script>
 </body>

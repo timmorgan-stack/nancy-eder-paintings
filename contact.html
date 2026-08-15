@@ -21,10 +21,11 @@
 
           <!-- Enquiry form. data-hook="enquiry-form" is the integration point for the codanomix mailer.
                Until wired, submission opens a pre-filled mailto as a graceful fallback. -->
-          <form class="form" data-hook="enquiry-form" novalidate style="margin-top:28px">
+          <form class="form form-card" data-hook="enquiry-form" novalidate style="margin-top:28px">
+            <h2 class="form-title">Send a message</h2>
             <div class="form-row">
-              <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
-              <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" placeholder="Your name" required></div>
+              <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
             </div>
             <div class="form-row">
               <div class="field">
@@ -37,9 +38,9 @@
               </div>
               <div class="field"><label for="c-ref">Artwork reference <span class="muted">(optional)</span></label><input id="c-ref" name="ref" placeholder="e.g. NE-5583"><div class="hint">Shown on each artwork page.</div></div>
             </div>
-            <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+            <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required placeholder="Which painting, what you'd like to know, or the view you have in mind for a commission…"></textarea></div>
             <div class="form-msg" data-form-msg hidden></div>
-            <div><button class="btn btn--accent" type="submit">Send message</button></div>
+            <div class="form-actions"><button class="btn btn--accent" type="submit">Send message</button><p class="note">Nancy replies personally, usually within two working days.</p></div>
           </form>
         </div>
 

@@ -16,7 +16,7 @@ Then open http://localhost:8791/ (a `nancy` entry is also in `.claude/launch.jso
 | Page | What it does |
 |---|---|
 | `index.html` | Hero, featured works, browse-by-trip tiles, buying info, newsletter (placeholder) |
-| `gallery.html` | Full gallery. Filter chips by trip, availability + sort selects, URL-synced (`?series=portugal&status=available&sort=price-asc`), `?view=<id>` deep-links the lightbox |
+| `gallery.html` | Work: sketchbook (trip) tiles + search at top; overview shows 6 per trip with “View all”; opening a trip gives a paginated grid (10/20/40/all per page, remembered), availability + sort, sticky chip bar with search, prev/next sketchbook. Search is scoped to the open sketchbook (with a “search everything” link). URL-synced: `?series=portugal&q=porto&status=available&sort=price-asc&per=20&page=2`; `?view=<id>` deep-links the lightbox |
 | `artwork.html?id=<id>` | Single work: large image (click → lightbox/zoom), specs, price, add-to-cart / enquire, related works |
 | `about.html` | Artist statement (**placeholder copy — Nancy to replace**), stats, `#shipping` policy section |
 | `contact.html` | Enquiry form (mailto fallback), prefillable via `?ref=NE-5613&subject=commission` |
