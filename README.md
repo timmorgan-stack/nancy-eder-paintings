@@ -18,7 +18,7 @@ Then open http://localhost:8791/ (a `nancy` entry is also in `.claude/launch.jso
 | `index.html` | Hero, featured works, browse-by-trip tiles, buying info, newsletter (placeholder) |
 | `gallery.html` | Work: sketchbook (trip) tiles + search at top; overview shows 6 per trip with “View all”; opening a trip gives a paginated grid (10/20/40/all per page, remembered), availability + sort, sticky chip bar with search, prev/next sketchbook. Search is scoped to the open sketchbook (with a “search everything” link). URL-synced: `?series=portugal&q=porto&status=available&sort=price-asc&per=20&page=2`; `?view=<id>` deep-links the lightbox |
 | `artwork.html?id=<id>` | Single work: large image (click → lightbox/zoom), specs, price, add-to-cart / enquire, related works |
-| `about.html` | Artist statement (**placeholder copy — Nancy to replace**), stats, `#shipping` policy section |
+| `about.html` | Portrait of Nancy (`img/site/nancy-eder-portrait.jpg`) + artist statement (**placeholder copy — Nancy to replace**), stats, a rotating featured painting (random landscape work each visit), `#shipping` policy section |
 | `contact.html` | Enquiry form (mailto fallback), prefillable via `?ref=NE-5613&subject=commission` |
 | `cart.html` | localStorage cart (`ne_cart_v1`), one-of-a-kind items so qty is always 1 |
 | `checkout.html` | Contact + shipping form, order summary, **payment placeholder** (`#payment-element`) |

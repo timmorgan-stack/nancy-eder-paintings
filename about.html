@@ -14,9 +14,9 @@
   <main data-region="main">
     <section class="section" data-hook="about">
       <div class="wrap about">
-        <figure class="about__art reveal">
-          <a href="artwork.html?id=5626" data-about-link><img src="img/large/5626.jpg" alt="Painting by Nancy Eder" width="1800" height="1350" data-about-img></a>
-          <figcaption data-about-caption>Paula's Jardim, Porto — July 2016. Ink and watercolour on paper.</figcaption>
+        <figure class="about__portrait reveal">
+          <img src="img/site/nancy-eder-portrait.jpg" alt="Nancy Eder" width="1018" height="1200">
+          <figcaption>Nancy Orans Eder</figcaption>
         </figure>
         <div class="about__body reveal">
           <div class="eyebrow">About the artist</div>
@@ -34,6 +34,23 @@
             <a class="btn" href="gallery.html">Browse the work</a>
             <a class="btn btn--ghost" href="contact.html">Get in touch</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A different painting each visit -->
+    <section class="section section--tight" data-hook="about-work">
+      <div class="wrap about-feature">
+        <figure class="about__art reveal">
+          <a href="artwork.html?id=5626" data-about-link><img src="img/large/5626.jpg" alt="Painting by Nancy Eder" width="1800" height="1350" data-about-img></a>
+        </figure>
+        <div class="about-feature__side reveal">
+          <div class="eyebrow">From the sketchbooks</div>
+          <h2 data-about-title style="margin:0 0 .25em">Paula's Jardim</h2>
+          <p class="muted" data-about-meta style="margin:0 0 6px">Porto, Portugal · July 2016</p>
+          <p class="muted" data-about-spec style="font-size:.9rem">Ink and watercolour on paper, 12 × 16 in</p>
+          <a class="btn btn--ghost" href="artwork.html?id=5626" data-about-cta>View this painting</a>
+          <p class="note" style="margin-top:18px">A different painting appears here each time you visit.</p>
         </div>
       </div>
     </section>
@@ -67,13 +84,18 @@
   <script>
     NE.loadCatalog().then(cat => {
       // A different painting each visit (from the featured, unsold works)
-      const pool = cat.artworks.filter(a => a.featured && a.status !== 'sold');
+      // Landscape works only, so the portrait + painting column stays in balance with the text
+      const pool = cat.artworks.filter(a => a.featured && a.status !== 'sold' && a.image.w >= a.image.h);
       const pick = pool[Math.floor(Math.random() * pool.length)];
       if (pick) {
         const img = document.querySelector('[data-about-img]');
         img.src = pick.image.large; img.width = pick.image.w; img.height = pick.image.h; img.alt = `${pick.title} — ${pick.medium}`;
-        document.querySelector('[data-about-link]').href = `artwork.html?id=${pick.id}`;
-        document.querySelector('[data-about-caption]').textContent = `${pick.title}, ${pick.place} — ${pick.date}. ${pick.medium}.`;
+        const href = `artwork.html?id=${pick.id}`;
+        document.querySelector('[data-about-link]').href = href;
+        document.querySelector('[data-about-cta]').href = href;
+        document.querySelector('[data-about-title]').textContent = pick.title;
+        document.querySelector('[data-about-meta]').textContent = `${pick.place} · ${pick.date}`;
+        document.querySelector('[data-about-spec]').textContent = `${pick.medium}, ${pick.size}`;
       }
       document.querySelector('[data-stat-count]').textContent = cat.artworks.length;
       document.querySelector('[data-stat-series]').textContent = cat.series.length;
