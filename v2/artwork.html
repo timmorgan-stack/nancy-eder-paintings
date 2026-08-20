@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artwork — Nancy Eder</title>
+  <link rel="icon" href="../img/site/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="artwork">
+  <div data-region="header"></div>
+
+  <main data-region="main">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb" data-hook="breadcrumbs">
+        <a href="index.html">Home</a> · <a href="gallery.html">Work</a> · <a data-crumb-series href="gallery.html"></a> · <span data-crumb-title></span>
+      </nav>
+
+      <article class="art" data-hook="artwork" data-artwork>
+        <div class="art__media reveal" data-media>
+          <img data-img alt="" width="1800" height="1350">
+          <span class="card__zoom" aria-hidden="true"></span>
+        </div>
+        <div class="art__panel reveal">
+          <div class="eyebrow" data-series></div>
+          <h1 data-title></h1>
+          <p class="muted" data-sub style="margin-top:-6px"></p>
+          <div class="price" data-price></div>
+          <div class="art__cta" data-cta></div>
+          <ul class="spec">
+            <li><span>Medium</span><span data-medium></span></li>
+            <li><span>Size</span><span data-size></span></li>
+            <li><span>Place</span><span data-place></span></li>
+            <li><span>Date</span><span data-year></span></li>
+            <li><span>Presentation</span><span>Unframed, signed on the front</span></li>
+            <li><span>Reference</span><span data-ref></span></li>
+          </ul>
+          <p data-desc class="muted" style="font-size:.95rem"></p>
+          <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h13v9H3zM16 11h3l2 3v3h-5z"/></svg>Ships flat, insured and tracked. Flat-rate US shipping <span data-shipping></span>; international by quote. <a class="link" href="about.html#shipping">Shipping &amp; returns</a></p>
+        </div>
+      </article>
+    </div>
+
+    <section class="section related" data-hook="related">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">From the same trip</div>
+            <h2 data-related-title style="margin:0">More from this series</h2>
+          </div>
+          <a class="link link-arrow" data-related-link href="gallery.html">See the series</a>
+        </div>
+        <div class="grid" data-related-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-region="footer"></div>
+
+  <script src="data/catalog.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    (async () => {
+      const cat = await NE.loadCatalog();
+      const id = NE.qs('id');
+      const a = NE.getArt(id) || cat.artworks[0];
+      if (!a) return;
+      const $ = (s) => document.querySelector(s);
+      const sold = a.status === 'sold';
+
+      document.title = `${a.title} — Nancy Eder`;
+      $('[data-crumb-series]').textContent = a.seriesName; $('[data-crumb-series]').href = `gallery.html?series=${a.series}`;
+      $('[data-crumb-title]').textContent = a.title;
+      const img = $('[data-img]');
+      img.src = a.image.large; img.alt = `${a.title} — ${a.medium}`; img.width = a.image.w; img.height = a.image.h;
+      $('[data-media]').setAttribute('data-lightbox', a.id);
+      $('[data-media] .card__zoom').innerHTML = NE.ICON_ZOOM;
+      $('[data-series]').textContent = `${a.seriesName} series`;
+      $('[data-title]').textContent = a.title;
+      $('[data-sub]').textContent = `${a.place} · ${a.date}`;
+      $('[data-price]').innerHTML = sold ? '<span class="badge badge--sold">Sold</span>' : `${NE.money(a.price)}<small>USD · original</small>`;
+      $('[data-medium]').textContent = a.medium;
+      $('[data-size]').textContent = a.size;
+      $('[data-year]').textContent = a.date; $('[data-place]').textContent = a.place;
+      $('[data-ref]').textContent = `NE-${a.id}`;
+      $('[data-desc]').textContent = a.description;
+      $('[data-shipping]').textContent = NE.money(NE.SHIPPING_FLAT);
+
+      const cta = $('[data-cta]');
+      if (sold) {
+        cta.innerHTML = `<a class="btn btn--ghost btn--block" href="contact.html?ref=NE-${a.id}&subject=commission">Ask about a similar piece</a>`;
+      } else if (NE.cart.has(a.id)) {
+        cta.innerHTML = `<a class="btn btn--accent btn--block" href="cart.html">In cart — view</a><a class="btn btn--ghost btn--block" href="contact.html?ref=NE-${a.id}">Ask a question</a>`;
+      } else {
+        cta.innerHTML = `<button class="btn btn--accent btn--block" data-add-to-cart="${a.id}">Add to cart</button><a class="btn btn--ghost btn--block" href="contact.html?ref=NE-${a.id}">Ask a question</a>`;
+      }
+
+      // Related
+      const rel = cat.artworks.filter(x => x.series === a.series && x.id !== a.id).slice(0, 8);
+      $('[data-related-title]').textContent = `More from ${a.seriesName}`;
+      $('[data-related-link]').href = `gallery.html?series=${a.series}`;
+      const grid = $('[data-related-grid]');
+      grid.innerHTML = rel.map(x => NE.cardHTML(x)).join('');
+      NE.lightbox.setItems([a, ...rel]);
+      NE.watchGrid(grid);
+      NE.revealAll();
+    })();
+  </script>
+</body>
+</html>

@@ -11,6 +11,12 @@ python3 -m http.server 8791 --directory /Users/timmorgan/Desktop/Claude/nancy-ed
 ```
 Then open http://localhost:8791/ (a `nancy` entry is also in `.claude/launch.json`).
 
+## Versions
+* **Root** — the original site.
+* **`v2/`** — a separate updated version carrying Nancy's real biography (LinkedIn + the
+  SoHo Memory Project), medium corrected to gouache, and a "Village years" section.
+  Lives at `/v2/` on Pages and shares this folder's images. See `v2/README.md`.
+
 ## Pages
 
 | Page | What it does |
