@@ -58,6 +58,14 @@
           </div>
         </div>
         <div class="series-strip" data-series-strip></div>
+
+        <div class="books" style="border-top:0;margin-top:clamp(28px,4vw,44px);padding-top:0">
+          <div class="books__head">
+            <h2><a class="anchor" href="#collections">Sketchbooks</a></h2>
+            <p class="muted">Or take a trip: the same work gathered by place, across every medium.</p>
+          </div>
+          <div class="books__strip" data-books-strip></div>
+        </div>
       </div>
     </section>
 
@@ -145,6 +153,13 @@
         const cover = shuffle(works)[0];
         return `<a class="series-tile reveal" href="gallery.html?collection=${col.id}"><img src="${cover.image.thumb}" alt="" loading="lazy"><span>${col.name} <small class="muted">· ${works.length} works</small></span></a>`;
       }).join('');
+      // Sketchbooks — the same work grouped by trip rather than by medium
+      const booksStrip = document.querySelector('[data-books-strip]');
+      booksStrip.innerHTML = (cat.sketchbooks || []).map(b => {
+        const works = cat.artworks.filter(a => a.sketchbook === b.id);
+        return `<a class="book-tile reveal" href="gallery.html?sketchbook=${b.id}"><img src="${shuffle(works)[0].image.thumb}" alt="" loading="lazy"><span class="book-tile__name">${b.name}</span><span class="book-tile__meta">${works.length} works</span></a>`;
+      }).join('');
+
       NE.revealAll();
       NE.jumpToHash();
 

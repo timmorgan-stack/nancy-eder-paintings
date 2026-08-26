@@ -74,6 +74,31 @@ Collage went 3 → 31 and Prints 4 → 12.
   Not imported. **It should be deleted from the source folder** — it doesn't belong in a folder
   that gets handed to anyone building the site.
 
+## Third drop (+48 works, 446 total)
+
+52 files arrived alongside the others, named `... - N (1).jpeg`. All 52 were confirmed new content
+by perceptual hash, but **two turned out to be re-photographs of works already listed** (different
+crop and lighting, so the hash missed them) — caught by eye and excluded. Also out: one composite
+and one worktable photo. New series **Run, Rabbit, Run** (21 linocut-and-gouache collages), plus
+Cuba, Spain and Céret paintings from 2017–2019 with the artist's captions.
+
+Map in `tools/classify_batch3.py`, importer in `tools/build_batch3.py`. Ids are `cNNN`.
+
+## Sketchbooks — the second way through the work
+
+`tools/build_sketchbooks.py` adds a `sketchbook` field and a `sketchbooks` array to the catalogue.
+It is **supplementary to, and independent of, the collections**: collections group by *medium*
+(Paintings, Drawings, Prints, Pottery, Collage), sketchbooks group by *place*, so one sketchbook
+holds paintings and drawings and prints from the same trip together.
+
+* Nine sketchbooks: Cuba, France & the Roussillon, Spain, Portugal, Italy, England, Norway,
+  Maine & Acadia, Florida — 208 of 446 works.
+* Assignment is from the **recorded place first**, series second (several works sit in the France
+  series but were painted in Spain — place wins). Works with no identifiable place are simply left
+  out of this navigation rather than guessed into a trip.
+* URLs: `?sketchbook=cuba`, and `?sketchbook=france&collection=drawings` to pin one to a medium.
+* Re-run it after any import: `python3 tools/build_sketchbooks.py v2/data/catalog.json`.
+
 ## Still to confirm with Nancy
 * **Gouache vs watercolour per work** — the catalogue now says gouache for everything; some pages
   are plainly watercolour washes. Ideally each work is tagged individually.
@@ -95,3 +120,8 @@ Collage went 3 → 31 and Prints 4 → 12.
   likely Florida and could move there.
 * Collage vs painting is a judgement call on about a dozen pieces where torn paper and gouache are
   mixed — worth her eye.
+* **238 works have no sketchbook** because no place is recorded — the botanical studies, the
+  markets, the pottery, the rabbit collages. If she can place any of them, they join a sketchbook
+  automatically on the next run.
+* Watch the **repo size**: the images are now ~350 MB and the history about the same. Another drop
+  or two and this wants Git LFS or an image CDN rather than plain Pages.

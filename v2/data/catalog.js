@@ -122,6 +122,12 @@ window.NE_CATALOG = {
    "name": "Mixed Media",
    "blurb": "Torn and painted paper, built up in layers.",
    "collection": "collage"
+  },
+  {
+   "id": "rabbits",
+   "name": "Run, Rabbit, Run",
+   "blurb": "Linocut rabbits, cut up and collaged back together.",
+   "collection": "collage"
   }
  ],
  "artworks": [
@@ -145,7 +151,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1345
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5562",
@@ -167,7 +174,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1355
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5563",
@@ -189,7 +197,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1346
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5564",
@@ -211,7 +220,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1389
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5565",
@@ -233,7 +243,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1366
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5566",
@@ -255,7 +266,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1313
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5567",
@@ -277,7 +289,8 @@ window.NE_CATALOG = {
     "w": 1306,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5568",
@@ -299,7 +312,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1328
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5569",
@@ -321,7 +335,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1348
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5570",
@@ -343,7 +358,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1377
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5571",
@@ -365,7 +381,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1359
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5572",
@@ -387,7 +404,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1344
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5573",
@@ -409,7 +427,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1320
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5574",
@@ -431,7 +450,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1331
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "cuba"
   },
   {
    "id": "5575",
@@ -453,7 +473,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1329
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5576",
@@ -475,7 +496,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1288
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5577",
@@ -497,7 +519,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1283
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5578",
@@ -519,7 +542,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1260
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5579",
@@ -541,7 +565,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1235
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5580",
@@ -563,7 +588,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1246
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5581",
@@ -585,7 +611,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1237
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5582",
@@ -607,7 +634,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1230
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5583",
@@ -629,7 +657,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1225
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5584",
@@ -651,7 +680,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1246
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5585",
@@ -673,7 +703,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1331
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5586",
@@ -695,7 +726,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1251
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5587",
@@ -717,7 +749,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1364
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5588",
@@ -739,7 +772,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1342
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5589",
@@ -761,7 +795,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1374
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5590",
@@ -783,7 +818,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1336
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5591",
@@ -805,7 +841,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1367
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5592",
@@ -827,7 +864,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1291
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5593",
@@ -849,7 +887,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1225
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5594",
@@ -871,7 +910,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1291
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5595",
@@ -893,7 +933,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1332
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5596",
@@ -915,7 +956,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1239
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "spain"
   },
   {
    "id": "5597",
@@ -937,7 +979,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1229
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5598",
@@ -959,7 +1002,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1427
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5599",
@@ -981,7 +1025,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1452
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5600",
@@ -1003,7 +1048,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1285
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5601",
@@ -1025,7 +1071,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1382
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5602",
@@ -1047,7 +1094,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1443
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5603",
@@ -1069,7 +1117,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1456
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5604",
@@ -1091,7 +1140,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1458
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5605",
@@ -1113,7 +1163,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1436
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5606",
@@ -1135,7 +1186,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1355
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5607",
@@ -1157,7 +1209,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1349
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5608",
@@ -1179,7 +1232,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1371
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5609",
@@ -1201,7 +1255,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1360
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5610",
@@ -1223,7 +1278,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1334
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5611",
@@ -1245,7 +1301,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1358
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5612",
@@ -1267,7 +1324,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1399
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5613",
@@ -1289,7 +1347,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1365
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5614",
@@ -1311,7 +1370,8 @@ window.NE_CATALOG = {
     "w": 1324,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5615",
@@ -1333,7 +1393,8 @@ window.NE_CATALOG = {
     "w": 1323,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5616",
@@ -1355,7 +1416,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1324
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5617",
@@ -1377,7 +1439,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1373
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5618",
@@ -1399,7 +1462,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1356
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5619",
@@ -1421,7 +1485,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1353
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5620",
@@ -1443,7 +1508,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1346
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5621",
@@ -1465,7 +1531,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1372
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5622",
@@ -1487,7 +1554,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1381
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5623",
@@ -1509,7 +1577,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1364
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5624",
@@ -1531,7 +1600,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1322
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5625",
@@ -1553,7 +1623,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1434
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5626",
@@ -1575,7 +1646,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1414
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5627",
@@ -1597,7 +1669,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1413
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5628",
@@ -1619,7 +1692,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1425
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5629",
@@ -1641,7 +1715,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1441
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5630",
@@ -1663,7 +1738,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1259
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "norway"
   },
   {
    "id": "5631",
@@ -1685,7 +1761,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1437
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5632",
@@ -1707,7 +1784,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1450
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5633",
@@ -1729,7 +1807,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1381
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5634",
@@ -1751,7 +1830,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1431
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5635",
@@ -1773,7 +1853,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1451
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5636",
@@ -1795,7 +1876,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1426
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5637",
@@ -1817,7 +1899,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1417
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5638",
@@ -1839,7 +1922,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1452
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5639",
@@ -1861,7 +1945,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1442
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5640",
@@ -1883,7 +1968,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1416
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "england"
   },
   {
    "id": "5641",
@@ -1905,7 +1991,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1337
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "portugal"
   },
   {
    "id": "5642",
@@ -1927,7 +2014,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1335
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5643",
@@ -1949,7 +2037,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1360
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5644",
@@ -1971,7 +2060,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1359
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5645",
@@ -1993,7 +2083,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1375
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5646",
@@ -2015,7 +2106,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1422
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5647",
@@ -2037,7 +2129,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1428
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5648",
@@ -2059,7 +2152,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1421
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5649",
@@ -2081,7 +2175,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1385
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5650",
@@ -2103,7 +2198,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1346
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5651",
@@ -2125,7 +2221,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1341
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5652",
@@ -2147,7 +2244,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1411
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5653",
@@ -2169,7 +2267,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1444
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5654",
@@ -2191,7 +2290,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1412
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5655",
@@ -2213,7 +2313,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1401
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5656",
@@ -2235,7 +2336,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1413
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5657",
@@ -2257,7 +2359,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1425
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5658",
@@ -2279,7 +2382,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1416
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5659",
@@ -2301,7 +2405,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1418
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5660",
@@ -2323,7 +2428,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1405
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5661",
@@ -2345,7 +2451,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1376
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5662",
@@ -2367,7 +2474,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1320
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "italy"
   },
   {
    "id": "5663",
@@ -2389,7 +2497,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1190
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5664",
@@ -2411,7 +2520,8 @@ window.NE_CATALOG = {
     "w": 1184,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5665",
@@ -2433,7 +2543,8 @@ window.NE_CATALOG = {
     "w": 1249,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5666",
@@ -2455,7 +2566,8 @@ window.NE_CATALOG = {
     "w": 1308,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5667",
@@ -2477,7 +2589,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1346
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5668",
@@ -2499,7 +2612,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1352
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5669",
@@ -2521,7 +2635,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1346
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5671",
@@ -2543,7 +2658,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1367
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5672",
@@ -2565,7 +2681,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1336
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5673",
@@ -2587,7 +2704,8 @@ window.NE_CATALOG = {
     "w": 1352,
     "h": 1800
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "5675",
@@ -2609,7 +2727,8 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1392
    },
-   "collection": "paintings"
+   "collection": "paintings",
+   "sketchbook": "france"
   },
   {
    "id": "a001",
@@ -2653,7 +2772,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a002.jpg",
     "w": 1800,
     "h": 1421
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a003",
@@ -2785,7 +2905,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a009.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a010",
@@ -2829,7 +2950,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a011.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a012",
@@ -2873,7 +2995,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a013.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "a014",
@@ -2917,7 +3040,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a016.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "a017",
@@ -2939,7 +3063,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a017.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a018",
@@ -2983,7 +3108,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a019.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a020",
@@ -3005,7 +3131,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a020.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a021",
@@ -3027,7 +3154,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a021.jpg",
     "w": 1800,
     "h": 1559
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a022",
@@ -3071,7 +3199,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a023.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a024",
@@ -3115,7 +3244,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a025.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a026",
@@ -3269,7 +3399,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a033.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a034",
@@ -3335,7 +3466,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a036.jpg",
     "w": 1800,
     "h": 1375
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a037",
@@ -3577,7 +3709,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a048.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a050",
@@ -3599,7 +3732,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a050.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "a051",
@@ -3687,7 +3821,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a054.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a055",
@@ -3753,7 +3888,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a057.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "spain"
   },
   {
    "id": "a059",
@@ -3775,7 +3911,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a059.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a060",
@@ -3797,7 +3934,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a060.jpg",
     "w": 1800,
     "h": 1367
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a061",
@@ -3863,7 +4001,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a063.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a064",
@@ -3885,7 +4024,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a064.jpg",
     "w": 1800,
     "h": 1309
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a065",
@@ -3995,7 +4135,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a069.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a070",
@@ -4017,7 +4158,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a070.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a071",
@@ -4039,7 +4181,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a071.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a072",
@@ -4061,7 +4204,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a072.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a073",
@@ -4083,7 +4227,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a073.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a074",
@@ -4105,7 +4250,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a074.jpg",
     "w": 1800,
     "h": 1594
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a075",
@@ -4215,7 +4361,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a080.jpg",
     "w": 1800,
     "h": 1510
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a081",
@@ -4237,7 +4384,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a081.jpg",
     "w": 1800,
     "h": 1738
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a082",
@@ -4259,7 +4407,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a082.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a083",
@@ -4325,7 +4474,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a085.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "a086",
@@ -4347,7 +4497,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a086.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a087",
@@ -4369,7 +4520,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a087.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a088",
@@ -4391,7 +4543,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a088.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a089",
@@ -4413,7 +4566,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a089.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a090",
@@ -4435,7 +4589,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a090.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a092",
@@ -4479,7 +4634,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a093.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a094",
@@ -4501,7 +4657,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a094.jpg",
     "w": 1800,
     "h": 1469
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a095",
@@ -4545,7 +4702,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a096.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a097",
@@ -4589,7 +4747,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a099.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "spain"
   },
   {
    "id": "a100",
@@ -4611,7 +4770,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a100.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a101",
@@ -4633,7 +4793,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a101.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a102",
@@ -4677,7 +4838,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a103.jpg",
     "w": 1800,
     "h": 1738
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a104",
@@ -4787,7 +4949,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a108.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "a109",
@@ -4941,7 +5104,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a116.jpg",
     "w": 1800,
     "h": 1437
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a117",
@@ -5073,7 +5237,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a124.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a125",
@@ -5095,7 +5260,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a125.jpg",
     "w": 1800,
     "h": 1511
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a126",
@@ -5117,7 +5283,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a126.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a127",
@@ -5139,7 +5306,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a127.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a128",
@@ -5161,7 +5329,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a128.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a129",
@@ -5183,7 +5352,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a129.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a130",
@@ -5205,7 +5375,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a130.jpg",
     "w": 1627,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a132",
@@ -5227,7 +5398,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a132.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a134",
@@ -5271,7 +5443,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a135.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a138",
@@ -5315,7 +5488,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a141.jpg",
     "w": 1350,
     "h": 1800
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a142",
@@ -5337,7 +5511,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a142.jpg",
     "w": 1800,
     "h": 1302
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a143",
@@ -5381,7 +5556,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a144.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a146",
@@ -5403,7 +5579,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a146.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a147",
@@ -5425,7 +5602,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a147.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a148",
@@ -5447,7 +5625,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a148.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a151",
@@ -5491,7 +5670,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a152.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a153",
@@ -5535,7 +5715,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a154.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a155",
@@ -5557,7 +5738,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a155.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "spain"
   },
   {
    "id": "a156",
@@ -5799,7 +5981,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a168.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a169",
@@ -5821,7 +6004,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/a169.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "france"
   },
   {
    "id": "a170",
@@ -7537,7 +7721,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b265.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "florida"
   },
   {
    "id": "b266",
@@ -7867,7 +8052,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b281.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "spain"
   },
   {
    "id": "b282",
@@ -7933,7 +8119,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b284.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b285",
@@ -7955,7 +8142,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b285.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b286",
@@ -7977,7 +8165,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b286.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b287",
@@ -8021,7 +8210,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b288.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b289",
@@ -8043,7 +8233,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b289.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b290",
@@ -8065,7 +8256,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b290.jpg",
     "w": 1800,
     "h": 1362
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b291",
@@ -8087,7 +8279,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b291.jpg",
     "w": 1800,
     "h": 1461
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b292",
@@ -8109,7 +8302,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b292.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b293",
@@ -8131,7 +8325,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b293.jpg",
     "w": 1800,
     "h": 1445
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b294",
@@ -8153,7 +8348,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b294.jpg",
     "w": 1800,
     "h": 1365
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b295",
@@ -8175,7 +8371,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b295.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b296",
@@ -8219,7 +8416,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/b297.jpg",
     "w": 1800,
     "h": 1350
-   }
+   },
+   "sketchbook": "maine"
   },
   {
    "id": "b298",
@@ -8880,6 +9078,1078 @@ window.NE_CATALOG = {
     "w": 1800,
     "h": 1350
    }
+  },
+  {
+   "id": "c002",
+   "title": "Linocut 13",
+   "place": "",
+   "series": "prints",
+   "seriesName": "Linocuts",
+   "collection": "prints",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut on paper",
+   "size": "8 × 10 in",
+   "price": 120,
+   "status": "available",
+   "featured": false,
+   "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
+   "image": {
+    "large": "../img/large/c002.jpg",
+    "thumb": "../img/thumb/c002.jpg",
+    "w": 1800,
+    "h": 1439
+   }
+  },
+  {
+   "id": "c003",
+   "title": "Rabbits 1",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c003.jpg",
+    "thumb": "../img/thumb/c003.jpg",
+    "w": 1800,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c004",
+   "title": "Rabbits 2",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c004.jpg",
+    "thumb": "../img/thumb/c004.jpg",
+    "w": 1800,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c005",
+   "title": "Rabbits by the Stream",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 2019,
+   "date": "May 2019",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c005.jpg",
+    "thumb": "../img/thumb/c005.jpg",
+    "w": 1800,
+    "h": 1390
+   }
+  },
+  {
+   "id": "c006",
+   "title": "Rabbits 4",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c006.jpg",
+    "thumb": "../img/thumb/c006.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c007",
+   "title": "Rustling Rabbits in a Field of Waves",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 2017,
+   "date": "June 2017",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": true,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c007.jpg",
+    "thumb": "../img/thumb/c007.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c008",
+   "title": "Rabbits 6",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c008.jpg",
+    "thumb": "../img/thumb/c008.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c009",
+   "title": "Rabbits 7",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c009.jpg",
+    "thumb": "../img/thumb/c009.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c010",
+   "title": "Distractions for Rabbits",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 2019,
+   "date": "April 2019",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c010.jpg",
+    "thumb": "../img/thumb/c010.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c011",
+   "title": "Pescados en el Mercado",
+   "place": "Spain",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 2017,
+   "date": "July 2017",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c011.jpg",
+    "thumb": "../img/thumb/c011.jpg",
+    "w": 1800,
+    "h": 1541
+   },
+   "sketchbook": "spain"
+  },
+  {
+   "id": "c012",
+   "title": "Rap Blanc",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 2017,
+   "date": "August 2017",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c012.jpg",
+    "thumb": "../img/thumb/c012.jpg",
+    "w": 1800,
+    "h": 1529
+   }
+  },
+  {
+   "id": "c014",
+   "title": "Study 18",
+   "place": "",
+   "series": "landscapes",
+   "seriesName": "Landscapes",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c014.jpg",
+    "thumb": "../img/thumb/c014.jpg",
+    "w": 1800,
+    "h": 1297
+   }
+  },
+  {
+   "id": "c015",
+   "title": "Study 19",
+   "place": "",
+   "series": "landscapes",
+   "seriesName": "Landscapes",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c015.jpg",
+    "thumb": "../img/thumb/c015.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c016",
+   "title": "Study 15",
+   "place": "",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c016.jpg",
+    "thumb": "../img/thumb/c016.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c017",
+   "title": "Study 16",
+   "place": "",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c017.jpg",
+    "thumb": "../img/thumb/c017.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c018",
+   "title": "San Antonio",
+   "place": "San Antonio, Cuba",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c018.jpg",
+    "thumb": "../img/thumb/c018.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c019",
+   "title": "Study 18",
+   "place": "",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c019.jpg",
+    "thumb": "../img/thumb/c019.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c020",
+   "title": "Study 19",
+   "place": "",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c020.jpg",
+    "thumb": "../img/thumb/c020.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c021",
+   "title": "Hotel El Castillo, Baracoa",
+   "place": "Baracoa, Cuba",
+   "series": "cuba",
+   "seriesName": "Cuba",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c021.jpg",
+    "thumb": "../img/thumb/c021.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "cuba"
+  },
+  {
+   "id": "c022",
+   "title": "Study 49",
+   "place": "",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c022.jpg",
+    "thumb": "../img/thumb/c022.jpg",
+    "w": 1800,
+    "h": 1352
+   },
+   "sketchbook": "france"
+  },
+  {
+   "id": "c023",
+   "title": "La Playa, Empúries",
+   "place": "Empúries, Spain",
+   "series": "spain",
+   "seriesName": "Spain",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "July 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c023.jpg",
+    "thumb": "../img/thumb/c023.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "spain"
+  },
+  {
+   "id": "c024",
+   "title": "Collioure",
+   "place": "Collioure, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "July 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c024.jpg",
+    "thumb": "../img/thumb/c024.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "france"
+  },
+  {
+   "id": "c025",
+   "title": "Study 51",
+   "place": "",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c025.jpg",
+    "thumb": "../img/thumb/c025.jpg",
+    "w": 1800,
+    "h": 1347
+   },
+   "sketchbook": "france"
+  },
+  {
+   "id": "c026",
+   "title": "L'Escala, Empúries",
+   "place": "L'Escala, Spain",
+   "series": "spain",
+   "seriesName": "Spain",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "August 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c026.jpg",
+    "thumb": "../img/thumb/c026.jpg",
+    "w": 1800,
+    "h": 1336
+   },
+   "sketchbook": "spain"
+  },
+  {
+   "id": "c028",
+   "title": "St Cyprien",
+   "place": "St Cyprien, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "July 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c028.jpg",
+    "thumb": "../img/thumb/c028.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "france"
+  },
+  {
+   "id": "c029",
+   "title": "Céret Backyard",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c029.jpg",
+    "thumb": "../img/thumb/c029.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "france"
+  },
+  {
+   "id": "c030",
+   "title": "The Beach at Empúries",
+   "place": "Empúries, Spain",
+   "series": "spain",
+   "seriesName": "Spain",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "August 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c030.jpg",
+    "thumb": "../img/thumb/c030.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "spain"
+  },
+  {
+   "id": "c031",
+   "title": "Study 19",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c031.jpg",
+    "thumb": "../img/thumb/c031.jpg",
+    "w": 1800,
+    "h": 1351
+   }
+  },
+  {
+   "id": "c032",
+   "title": "La Piscine, Casa Mas Sant Nicolau",
+   "place": "Spain",
+   "series": "spain",
+   "seriesName": "Spain",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "August 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c032.jpg",
+    "thumb": "../img/thumb/c032.jpg",
+    "w": 1800,
+    "h": 1350
+   },
+   "sketchbook": "spain"
+  },
+  {
+   "id": "c033",
+   "title": "L'Aubergine",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 2018,
+   "date": "August 2018",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c033.jpg",
+    "thumb": "../img/thumb/c033.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c034",
+   "title": "Aubergine, Tomate et Ail",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c034.jpg",
+    "thumb": "../img/thumb/c034.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "c035",
+   "title": "Rabbits 9",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c035.jpg",
+    "thumb": "../img/thumb/c035.jpg",
+    "w": 1343,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c036",
+   "title": "Rabbits 10",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c036.jpg",
+    "thumb": "../img/thumb/c036.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c037",
+   "title": "Rabbits 11",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c037.jpg",
+    "thumb": "../img/thumb/c037.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c038",
+   "title": "What's for Dinner, Rabbit?",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c038.jpg",
+    "thumb": "../img/thumb/c038.jpg",
+    "w": 1800,
+    "h": 1388
+   }
+  },
+  {
+   "id": "c039",
+   "title": "One Small Step",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c039.jpg",
+    "thumb": "../img/thumb/c039.jpg",
+    "w": 1800,
+    "h": 1374
+   }
+  },
+  {
+   "id": "c040",
+   "title": "Run, Rabbit, Run!",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": true,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c040.jpg",
+    "thumb": "../img/thumb/c040.jpg",
+    "w": 1672,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c041",
+   "title": "Study 60",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c041.jpg",
+    "thumb": "../img/thumb/c041.jpg",
+    "w": 1800,
+    "h": 1317
+   }
+  },
+  {
+   "id": "c043",
+   "title": "Rabbits 15",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c043.jpg",
+    "thumb": "../img/thumb/c043.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c044",
+   "title": "Rabbits 16",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c044.jpg",
+    "thumb": "../img/thumb/c044.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c045",
+   "title": "Rabbits 17",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c045.jpg",
+    "thumb": "../img/thumb/c045.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c046",
+   "title": "Rabbits 18",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c046.jpg",
+    "thumb": "../img/thumb/c046.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c047",
+   "title": "Rabbits 19",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c047.jpg",
+    "thumb": "../img/thumb/c047.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c048",
+   "title": "Rabbits 20",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c048.jpg",
+    "thumb": "../img/thumb/c048.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c049",
+   "title": "Rabbits 21",
+   "place": "",
+   "series": "rabbits",
+   "seriesName": "Run, Rabbit, Run",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut and gouache collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
+   "image": {
+    "large": "../img/large/c049.jpg",
+    "thumb": "../img/thumb/c049.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c050",
+   "title": "Drawing 50",
+   "place": "",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/c050.jpg",
+    "thumb": "../img/thumb/c050.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "c051",
+   "title": "Study 61",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c051.jpg",
+    "thumb": "../img/thumb/c051.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "c052",
+   "title": "Study 62",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/c052.jpg",
+    "thumb": "../img/thumb/c052.jpg",
+    "w": 1800,
+    "h": 1738
+   }
   }
  ],
  "collections": [
@@ -8907,6 +10177,53 @@ window.NE_CATALOG = {
    "id": "collage",
    "name": "Collage",
    "blurb": "Mixed media — torn paper, paint and print."
+  }
+ ],
+ "sketchbooks": [
+  {
+   "id": "cuba",
+   "name": "Cuba",
+   "blurb": "Baracoa, Bayamo, Santiago and San Antonio."
+  },
+  {
+   "id": "france",
+   "name": "France & the Roussillon",
+   "blurb": "Céret, Collioure, the Tech valley and the coast."
+  },
+  {
+   "id": "spain",
+   "name": "Spain",
+   "blurb": "Empúries, L'Escala and the Costa Brava."
+  },
+  {
+   "id": "portugal",
+   "name": "Portugal",
+   "blurb": "Porto and the Douro valley."
+  },
+  {
+   "id": "italy",
+   "name": "Italy",
+   "blurb": "Umbria and the hills near Perugia."
+  },
+  {
+   "id": "england",
+   "name": "England",
+   "blurb": "Cheshire, Staffordshire, Hertfordshire and London."
+  },
+  {
+   "id": "norway",
+   "name": "Norway",
+   "blurb": "Rygge and Østfold."
+  },
+  {
+   "id": "maine",
+   "name": "Maine & Acadia",
+   "blurb": "Acadia, Mount Desert Island and the Schoodic Peninsula."
+  },
+  {
+   "id": "florida",
+   "name": "Florida",
+   "blurb": "Gardens and streets in the American South."
   }
  ]
 };

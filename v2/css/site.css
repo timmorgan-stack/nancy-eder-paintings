@@ -497,8 +497,25 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 @media (max-width: 520px) { .timeline { grid-template-columns: 1fr; } .timeline li { padding-right: 0; } }
 
 /* ---------- About: studio photograph ---------- */
-.studio { margin: 0; }
-.studio img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
-.studio figcaption { font-size: .82rem; color: var(--muted); margin-top: 12px; }
+/* portrait leads; the worktable sits under it at about a third of the width */
+.about__figures { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.about__studio { width: 62%; max-width: 260px; }
+.about__studio img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
+.about__studio figcaption { font-size: .74rem; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+@media (max-width: 860px) { .about__figures { grid-template-columns: 1fr 1fr; align-items: start; } .about__studio { width: 100%; max-width: none; } }
 
 .trip-tiles:empty { display: none; }
+
+/* ---------- Sketchbooks: a second way through the same work ---------- */
+.books { margin-top: clamp(32px, 5vw, 56px); padding-top: clamp(24px, 3vw, 36px); border-top: 1px solid var(--line); }
+.books[hidden] { display: none; }
+.books__head { display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap; margin-bottom: 18px; }
+.books__head h2 { font-size: clamp(1.3rem, 2.2vw, 1.7rem); margin: 0; }
+.books__head p { margin: 0; font-size: .9rem; max-width: 58ch; }
+.books__strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 12px; }
+.book-tile { display: block; position: relative; padding-bottom: 10px; border-radius: 4px; }
+.book-tile img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; box-shadow: 0 0 0 1px var(--line); transition: transform .3s var(--ease), box-shadow .3s; }
+.book-tile:hover img { transform: translateY(-3px); box-shadow: var(--shadow), 0 0 0 1px var(--line); }
+.book-tile__name { display: block; font-family: var(--serif); font-size: 1rem; margin-top: 10px; text-align: center; }
+.book-tile__meta { display: block; font-size: .72rem; color: var(--muted); text-align: center; }
+@media (max-width: 520px) { .books__strip { grid-template-columns: repeat(3, 1fr); } }

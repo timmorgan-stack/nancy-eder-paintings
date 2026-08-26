@@ -14,10 +14,16 @@
   <main data-region="main">
     <section class="section" data-hook="about">
       <div class="wrap about">
-        <figure class="about__portrait reveal">
-          <img src="../img/site/nancy-eder-portrait.jpg" alt="Nancy Eder" width="1018" height="1200">
-          <figcaption>Nancy Orans Eder</figcaption>
-        </figure>
+        <div class="about__figures reveal">
+          <figure class="about__portrait">
+            <img src="../img/site/nancy-eder-portrait.jpg" alt="Nancy Eder" width="1018" height="1200">
+            <figcaption>Nancy Orans Eder</figcaption>
+          </figure>
+          <figure class="about__studio">
+            <img src="../img/site/nancy-eder-studio.jpg" alt="Nancy Eder's worktable, with paints, brushes and finished pages" width="1600" height="1200" loading="lazy">
+            <figcaption>The worktable — gouache, a jar of brushes, and the morning's pages drying.</figcaption>
+          </figure>
+        </div>
         <div class="about__body reveal">
           <div class="eyebrow">About the artist</div>
           <h1>Nancy Eder</h1>
@@ -26,7 +32,7 @@
           <p>She studied at Antioch College (BA) and New York University (MA), and came to painting full time after a working life of many parts: potter, art teacher, mediator for the Brooklyn courts, and an administrator at NYU. She showed her landscape work in Céret in August 2015, and divides her time between New York and the south of France.</p>
           <div class="stats">
             <div><strong data-stat-count>—</strong><span>original works online</span></div>
-            <div><strong data-stat-series>—</strong><span>sketchbook trips</span></div>
+            <div><strong data-stat-series>—</strong><span>sketchbooks</span></div>
             <div><strong>1968&ndash;2007</strong><span>in Greenwich Village</span></div>
           </div>
           <div class="hero__actions">
@@ -51,15 +57,6 @@
           <a class="btn btn--ghost" href="artwork.html?id=5626" data-about-cta>View this painting</a>
           <p class="note" style="margin-top:18px">A different painting appears here each time you visit.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section section--tight" data-hook="studio">
-      <div class="wrap">
-        <figure class="studio reveal">
-          <img src="../img/site/nancy-eder-studio.jpg" alt="Nancy Eder's worktable, with paints, brushes and finished sketchbook pages" width="1600" height="1200">
-          <figcaption>The worktable — gouache, a jar of brushes, and the morning's pages drying.</figcaption>
-        </figure>
       </div>
     </section>
 
@@ -141,7 +138,7 @@
         document.querySelector('[data-about-spec]').textContent = `${pick.medium}, ${pick.size}`;
       }
       document.querySelector('[data-stat-count]').textContent = cat.artworks.length;
-      document.querySelector('[data-stat-series]').textContent = cat.series.length;
+      document.querySelector('[data-stat-series]').textContent = (cat.sketchbooks || []).length;
       NE.jumpToHash();
     });
   </script>

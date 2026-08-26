@@ -31,6 +31,15 @@
         </form>
 
         <div class="trip-tiles" data-tiles></div>
+
+        <!-- Supplementary navigation: sketchbooks cut across the medium collections -->
+        <div class="books" data-books hidden>
+          <div class="books__head">
+            <h2>Sketchbooks</h2>
+            <p class="muted">The same work gathered by trip instead of by medium — paintings, drawings, prints and collage from one place, together.</p>
+          </div>
+          <div class="books__strip" data-books-strip></div>
+        </div>
       </div>
     </section>
 
@@ -110,13 +119,20 @@
 
       const collections = cat.collections;
       const seriesOf = (cid) => cat.series.filter(s => s.collection === cid);
-      const byCollection = (cid) => cat.artworks.filter(a => a.collection === cid);
-      const bySeries = (sid) => cat.artworks.filter(a => a.series === sid);
+      const inBook = (list) => state.sketchbook === 'all' ? list : list.filter(a => a.sketchbook === state.sketchbook);
+      const byCollection = (cid) => inBook(cat.artworks.filter(a => a.collection === cid));
+      const bySeries = (sid) => inBook(cat.artworks.filter(a => a.series === sid));
+      const collectionsIn = (bid) => collections.filter(c => cat.artworks.some(a => a.sketchbook === bid && a.collection === c.id));
       const findCol = (id) => collections.find(c => c.id === id);
       const findSer = (id) => cat.series.find(s => s.id === id);
       const cover = (list) => list.find(a => a.featured) || list[0];
 
+      const sketchbooks = cat.sketchbooks || [];
+      const findBook = (id) => sketchbooks.find(b => b.id === id);
+      const byBook = (bid) => cat.artworks.filter(a => a.sketchbook === bid);
+
       const state = {
+        sketchbook: NE.qs('sketchbook') || 'all',
         collection: NE.qs('collection') || 'all',
         series: NE.qs('series') || 'all',
         status: NE.qs('status') || 'all',
@@ -125,10 +141,12 @@
         per: NE.qs('per') || localStorage.getItem(PER_KEY) || '10',
         page: Math.max(1, parseInt(NE.qs('page') || '1', 10))
       };
+      if (!findBook(state.sketchbook)) state.sketchbook = 'all';
       if (!findCol(state.collection)) state.collection = 'all';
       if (!findSer(state.series)) state.series = 'all';
       // a series implies its collection
       if (state.series !== 'all') state.collection = findSer(state.series).collection;
+      if (state.series !== 'all') state.sketchbook = 'all';   // a series is a medium grouping; the two don't nest
       if (![...perSel.options].some(o => o.value === state.per)) state.per = '10';
       statusSel.value = state.status; sortSel.value = state.sort; perSel.value = state.per; setSearchValue(state.q);
 
@@ -167,11 +185,12 @@
       const scrollToResults = () => window.scrollTo({ top: Math.max(0, (setSec.hidden ? overview : setSec).getBoundingClientRect().top + scrollY - 88), behavior: 'smooth' });
 
       document.addEventListener('click', (e) => {
-        const t = e.target.closest('[data-go-collection], [data-go-series]');
+        const t = e.target.closest('[data-go-collection], [data-go-series], [data-go-book]');
         if (!t) return;
         e.preventDefault();
-        if (t.dataset.goCollection !== undefined) go({ collection: t.dataset.goCollection, series: 'all' });
-        else go({ series: t.dataset.goSeries, collection: findSer(t.dataset.goSeries).collection });
+        if (t.dataset.goBook !== undefined) go({ sketchbook: t.dataset.goBook, collection: 'all', series: 'all' });
+        else if (t.dataset.goCollection !== undefined) go({ collection: t.dataset.goCollection, series: 'all' });
+        else go({ series: t.dataset.goSeries, collection: findSer(t.dataset.goSeries).collection, sketchbook: 'all' });
         if (state.collection === 'all' && state.series === 'all' && !state.q) window.scrollTo({ top: 0, behavior: 'smooth' });
         else scrollToResults();
       });
@@ -200,6 +219,17 @@
 
       /* ---- Renderers ---- */
       function renderTiles() {
+        const book = findBook(state.sketchbook);
+        if (book && state.collection === 'all') {
+          tiles.innerHTML = collectionsIn(book.id).map(col => {
+            const works = byCollection(col.id), c = cover(works);
+            return `<a class="trip-tile reveal" href="gallery.html?sketchbook=${book.id}&collection=${col.id}" data-go-collection="${col.id}">
+              <img src="${c.image.thumb}" alt="" loading="lazy">
+              <div class="trip-tile__body"><strong>${col.name}</strong><span>${works.length} works</span></div></a>`;
+          }).join('');
+          return;
+        }
+        if (book) { tiles.innerHTML = ''; return; }
         if (state.collection === 'all') {
           tiles.innerHTML = collections.map(col => {
             const works = byCollection(col.id), c = cover(works);
@@ -219,15 +249,43 @@
         }
       }
 
+      function renderBooks() {
+        const wrap = $('[data-books]');
+        if (!sketchbooks.length || state.sketchbook !== 'all' || state.collection !== 'all' || state.series !== 'all' || state.q) {
+          wrap.hidden = true; return;
+        }
+        wrap.hidden = false;
+        $('[data-books-strip]').innerHTML = sketchbooks.map(b => {
+          const works = cat.artworks.filter(a => a.sketchbook === b.id);
+          const media = collectionsIn(b.id).length;
+          return `<a class="book-tile reveal" href="gallery.html?sketchbook=${b.id}" data-go-book="${b.id}">
+            <img src="${cover(works).image.thumb}" alt="" loading="lazy">
+            <span class="book-tile__name">${b.name}</span>
+            <span class="book-tile__meta">${works.length} works · ${media} ${media === 1 ? 'medium' : 'media'}</span></a>`;
+        }).join('');
+      }
+
       function renderChips() {
-        const items = state.collection === 'all'
-          ? [{ id: 'all', name: 'All work', go: 'collection' }, ...collections.map(c => ({ id: c.id, name: c.name, go: 'collection' }))]
-          : [{ id: 'all', name: '← All work', go: 'collection' },
-             { id: state.collection, name: findCol(state.collection).name, go: 'collection' },
-             ...seriesOf(state.collection).map(s => ({ id: s.id, name: s.name, go: 'series' }))];
+        const book = findBook(state.sketchbook);
+        let items;
+        if (book) {
+          items = [{ id: 'all', name: '← All work', go: 'book' },
+                   { id: book.id, name: book.name, go: 'book' },
+                   ...collectionsIn(book.id).map(c => ({ id: c.id, name: c.name, go: 'collection' }))];
+        } else if (state.collection === 'all') {
+          items = [{ id: 'all', name: 'All work', go: 'collection' },
+                   ...collections.map(c => ({ id: c.id, name: c.name, go: 'collection' })),
+                   ...sketchbooks.map(b => ({ id: b.id, name: b.name, go: 'book' }))];
+        } else {
+          items = [{ id: 'all', name: '← All work', go: 'collection' },
+                   { id: state.collection, name: findCol(state.collection).name, go: 'collection' },
+                   ...seriesOf(state.collection).map(s => ({ id: s.id, name: s.name, go: 'series' }))];
+        }
         chips.innerHTML = items.map(i => {
-          const on = i.go === 'collection' ? (state.series === 'all' && state.collection === i.id) : state.series === i.id;
-          return `<button class="chip" data-go-${i.go}="${i.id}" aria-pressed="${on}">${i.name}</button>`;
+          const on = i.go === 'series' ? state.series === i.id
+                   : i.go === 'book'   ? (state.sketchbook === i.id && state.collection === 'all')
+                   : (state.series === 'all' && state.collection === i.id);
+          return `<button class="chip" data-go-${i.go === 'book' ? 'book' : i.go}="${i.id}" aria-pressed="${on}">${i.name}</button>`;
         }).join('');
       }
 
@@ -245,6 +303,15 @@
       }
 
       function renderOverview() {
+        const book = findBook(state.sketchbook);
+        if (book) {
+          overviewWrap.innerHTML = collectionsIn(book.id).map(col =>
+            overviewRow(col.id, col.name, col.blurb, byCollection(col.id),
+              `gallery.html?sketchbook=${book.id}&collection=${col.id}`, `data-go-collection="${col.id}"`)).join('');
+          overviewWrap.querySelectorAll('[data-row]').forEach(g => NE.watchGrid(g));
+          NE.lightbox.setItems(byBook(book.id));
+          return;
+        }
         if (state.collection === 'all') {
           overviewWrap.innerHTML = collections.map(col =>
             overviewRow(col.id, col.name, col.blurb, byCollection(col.id),
@@ -300,29 +367,38 @@
 
       function render() {
         const searching = state.q.length > 0;
-        const col = findCol(state.collection), ser = findSer(state.series);
-        const showSet = searching || !!ser;
+        const col = findCol(state.collection), ser = findSer(state.series), book = findBook(state.sketchbook);
+        // a sketchbook on its own gets an overview by medium; pinned to one medium it's a flat set
+        const showSet = searching || !!ser || (!!book && !!col);
         overview.hidden = showSet; setSec.hidden = !showSet;
         searchClears.forEach(b => b.hidden = !searching);
 
-        $('[data-page-title]').textContent = col && !searching ? col.name : 'Work';
-        $('[data-crumbs]').innerHTML = col
-          ? `<a class="anchor" href="gallery.html" data-go-collection="all">Gallery</a> · ${col.name}` : 'Gallery';
-        $('[data-page-intro]').textContent = col && !searching ? col.blurb
-          : 'Nancy works in gouache, in pen and ink, in lino and in clay. Start with a collection, or search for a place or a subject.';
+        const heading = searching ? 'Work' : book ? book.name : col ? col.name : 'Work';
+        $('[data-page-title]').textContent = heading;
+        const crumbHome = `<a class="anchor" href="gallery.html" data-go-collection="all">Gallery</a>`;
+        $('[data-crumbs]').innerHTML = book
+          ? `${crumbHome} · Sketchbook${col ? ` · ${book.name}` : ''}`
+          : col ? `${crumbHome} · ${col.name}` : 'Gallery';
+        $('[data-page-intro]').textContent = searching ? 'Searching every collection.'
+          : book ? book.blurb : col ? col.blurb
+          : 'Nancy works in gouache, in pen and ink, in lino and in clay. Start with a collection or a sketchbook, or search for a place or a subject.';
 
-        renderTiles(); renderChips();
+        renderTiles(); renderChips(); renderBooks();
 
         if (searching) {
-          const pool = ser ? bySeries(ser.id) : col ? byCollection(col.id) : cat.artworks;
+          const pool = ser ? bySeries(ser.id) : col ? byCollection(col.id) : book ? byBook(book.id) : cat.artworks;
           const list = search(state.q, pool);
-          const allHits = (ser || col) ? search(state.q).length : list.length;
-          const where = ser ? ser.name : col ? col.name : 'everything';
+          const allHits = (ser || col || book) ? search(state.q).length : list.length;
+          const where = ser ? ser.name : col ? (book ? `${book.name} · ${col.name}` : col.name) : book ? book.name : 'everything';
           const blurb = (ser || col)
-            ? `Searching within ${where}${allHits > list.length ? ` — ${allHits} match${allHits === 1 ? '' : 'es'} across all the work · <a class="link" href="gallery.html?q=${encodeURIComponent(state.q)}" data-go-collection="all">search everything</a>` : ''}.`
+            ? `Searching within ${where}${allHits > list.length ? ` — ${allHits} match${allHits === 1 ? '' : 'es'} across all the work · <a class="link" href="gallery.html?q=${encodeURIComponent(state.q)}" data-go-book="all">search everything</a>` : ''}.`
             : 'Searching every collection — title, place, series, material or reference.';
           renderSet(list, { title: `Results for “${state.q}”`, blurb, eyebrow: 'Search',
             nav: `<span></span><a href="gallery.html" data-go-collection="all" class="trip-next__all">Back to all work</a><span></span>` });
+        } else if (book && col) {
+          const back = `<span></span><a href="gallery.html?sketchbook=${book.id}" data-go-book="${book.id}" class="trip-next__all">All of ${book.name}</a><span></span>`;
+          renderSet(byCollection(col.id), { title: `${col.name} — ${book.name}`, blurb: col.blurb,
+            eyebrow: 'Sketchbook', nav: back });
         } else if (ser) {
           renderSet(bySeries(ser.id), { title: ser.name, blurb: ser.blurb,
             eyebrow: seriesOf(ser.collection).length > 1
@@ -334,6 +410,7 @@
         }
 
         NE.setQs({
+          sketchbook: state.sketchbook !== 'all' ? state.sketchbook : null,
           collection: state.collection !== 'all' && !ser ? state.collection : null,
           series: state.series !== 'all' ? state.series : null,
           q: state.q || null, status: state.status, sort: state.sort,
@@ -341,7 +418,9 @@
           page: state.page > 1 ? state.page : null
         });
         document.title = searching ? `“${state.q}” — Nancy Eder`
-          : ser ? `${ser.name} — Nancy Eder` : col ? `${col.name} — Nancy Eder` : 'Work — Nancy Eder';
+          : ser ? `${ser.name} — Nancy Eder`
+          : book ? `${book.name}${col ? ' · ' + col.name : ''} — Nancy Eder`
+          : col ? `${col.name} — Nancy Eder` : 'Work — Nancy Eder';
         NE.revealAll();
       }
       render();
