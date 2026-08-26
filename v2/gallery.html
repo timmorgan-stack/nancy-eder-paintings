@@ -328,7 +328,9 @@
 
       function renderSet(list, { title, blurb, eyebrow, nav }) {
         list = sortList(list.filter(a => state.status === 'all' || a.status === state.status));
-        const per = perPage(); labelPerOptions();
+        // "Show all" must stay a finite page size: Infinity makes (page-1)*per NaN,
+        // and slice(NaN, NaN) silently returns nothing.
+        const per = Math.min(perPage(), Math.max(1, list.length)); labelPerOptions();
         const pages = Math.max(1, Math.ceil(list.length / per));
         state.page = Math.min(state.page, pages);
         const start = (state.page - 1) * per;
@@ -413,7 +415,9 @@
           sketchbook: state.sketchbook !== 'all' ? state.sketchbook : null,
           collection: state.collection !== 'all' && !ser ? state.collection : null,
           series: state.series !== 'all' ? state.series : null,
-          q: state.q || null, status: state.status, sort: state.sort,
+          q: state.q || null,
+          status: state.status !== 'all' ? state.status : null,
+          sort: state.sort !== 'default' ? state.sort : null,
           per: state.per !== '10' ? state.per : null,
           page: state.page > 1 ? state.page : null
         });

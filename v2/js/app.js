@@ -217,7 +217,9 @@ window.NE = (function () {
   const qs = (k) => new URLSearchParams(location.search).get(k);
   const setQs = (obj) => {
     const p = new URLSearchParams(location.search);
-    Object.entries(obj).forEach(([k, v]) => (v == null || v === '' || v === 'all') ? p.delete(k) : p.set(k, v));
+    // Only blank values are dropped. A caller that wants its own default omitted passes null —
+    // "all" is a real value for some params (per=all) and a default for others (series=all).
+    Object.entries(obj).forEach(([k, v]) => (v == null || v === '') ? p.delete(k) : p.set(k, v));
     history.replaceState(null, '', (p.toString() ? `?${p}` : location.pathname) + location.hash);
   };
 
