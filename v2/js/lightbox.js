@@ -98,7 +98,7 @@
     img.alt = `${a.title} — ${a.medium}`;
     counter.textContent = `${idx + 1} / ${items.length}`;
     title.textContent = a.title;
-    sub.textContent = `${a.place} · ${a.date} · ${a.medium}, ${a.size}`;
+    sub.textContent = `${NE.meta(a)} · ${a.medium}, ${a.size}`;
     const sold = a.status === 'sold';
     const inCart = NE.cart.has(a.id);
     actions.innerHTML = `

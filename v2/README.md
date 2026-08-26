@@ -29,9 +29,39 @@ If v2 is adopted, promote these files to the repo root and change `../img/` back
   adds nothing here.
 * Her sons' names/schooling beyond the bare fact that she raised two sons there.
 
+## The 'Art and Pottery' drop (170 images)
+
+Added from `~/Desktop/Claude/Nancy Eder/Art and Pottery`. Classified by eye from contact sheets;
+the map lives in `tools/classify_art_pottery.py`, and `tools/build_new_works.py` turns it into
+catalogue entries. 148 works catalogued, 22 images left out.
+
+| Collection | Works | Series |
+|---|---|---|
+| Paintings | 168 | the 7 sketchbook trips + Leaves & Gardens, Florida, Markets & Table, Colour Studies |
+| Drawings | 74 | Places & Streets, Trees Gardens & Leaves, Markets & Still Life |
+| Prints | 4 | Linocuts |
+| Pottery | 12 | Bowls & Vessels |
+| Collage | 3 | Mixed Media |
+
+**Left out (22)** — all photographs rather than works: places, buildings, rooftops, a palm, a
+carousel, market and food shots, two pictures of cards on a market table, and one composite that
+just duplicates two works already catalogued. One studio photograph was kept but as a *site asset*
+(`img/site/nancy-eder-studio.jpg`, used on About), not as a gallery work.
+
+**Gallery structure changed** to carry this: browsing is now Collections → Series → Works.
+`data/catalog.json` gained a `collections` array, and every series and artwork carries a
+`collection`. New-work ids are `aNNN` (reference `NE-aNNN`), matching the source filename number.
+
 ## Still to confirm with Nancy
 * **Gouache vs watercolour per work** — the catalogue now says gouache for everything; some pages
   are plainly watercolour washes. Ideally each work is tagged individually.
 * Whether she wants the Village material on the site at all, and the SoHo Memory Project quotes used.
 * Sizes, prices, sold status, contact email (`hello@nancyeder.com`) — unchanged placeholders.
 * The three uncaptioned works (5667, 5673, 5604).
+* **Titles for the new drop** — about half carry her handwritten caption (transcribed verbatim);
+  the rest are placeholders like "Bowl 4" or "Study 7" and need her names.
+* **Prices and sizes for the new work are placeholders**: drawings $180–280, linocuts $120–160,
+  pottery $85–165, collage $395–475. Pottery sizes are guessed diameters — they need measuring.
+* Whether the linocuts are **editioned** (the description says each is hand-coloured and unique).
+* Two works (a047, a135) look like framed/board paintings rather than sketchbook pages — worth
+  checking their medium.

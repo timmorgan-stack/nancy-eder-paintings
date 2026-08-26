@@ -8,6 +8,10 @@ window.NE = (function () {
   const SHIPPING_FLAT = 25;               // USD, domestic flat rate (placeholder)
   const state = { catalog: null, byId: new Map() };
 
+  /* ---------- Labels ---------- */
+  // Works vary: some carry a place and date from the caption, some carry neither.
+  const meta = (a) => [a.place, a.date].filter(Boolean).join(' · ') || a.medium;
+
   /* ---------- Money ---------- */
   const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
   const money = (n) => fmt.format(n);
@@ -84,7 +88,7 @@ window.NE = (function () {
     host.innerHTML = `
       <header class="site-header" data-hook="site-header">
         <div class="wrap">
-          <a class="brand" href="index.html" data-hook="brand">Nancy Eder <small>Paintings</small></a>
+          <a class="brand" href="index.html" data-hook="brand">Nancy Eder <small>Paintings &amp; Pottery</small></a>
           <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle><span></span></button>
           <nav class="nav" data-hook="primary-nav" aria-label="Primary">
             ${nav.map(([href, label, key]) => `<a href="${href}" ${page === key ? 'aria-current="page"' : ''}>${label}</a>`).join('')}
@@ -107,10 +111,14 @@ window.NE = (function () {
           <div class="cols">
             <div>
               <a class="brand" href="index.html">Nancy Eder</a>
-              <p style="margin-top:12px;max-width:34ch">Gouache and ink landscapes, painted on location in France, Spain and beyond. Original works available to purchase.</p>
+              <p style="margin-top:12px;max-width:34ch">Paintings, drawings, linocuts and hand-built pottery. Original works available to purchase.</p>
             </div>
             <div><h4>Explore</h4><ul>
               <li><a href="gallery.html">All work</a></li>
+              <li><a href="gallery.html?collection=paintings">Paintings</a></li>
+              <li><a href="gallery.html?collection=drawings">Drawings</a></li>
+              <li><a href="gallery.html?collection=prints">Prints</a></li>
+              <li><a href="gallery.html?collection=pottery">Pottery</a></li>
               <li><a href="gallery.html?status=available">Available</a></li>
               <li><a href="about.html">About the artist</a></li>
               <li><a href="about.html#village">The Village years</a></li>
@@ -147,7 +155,7 @@ window.NE = (function () {
         <div class="card__meta">
           <div>
             <div class="card__title">${a.title}</div>
-            <div class="card__sub">${a.place} · ${a.date}</div>
+            <div class="card__sub">${meta(a)}</div>
           </div>
           <div class="card__price">${sold ? '<span class="muted">Sold</span>' : money(a.price)}</div>
         </div>
@@ -249,5 +257,5 @@ window.NE = (function () {
     });
   });
 
-  return { loadCatalog, getArt, cart, money, toast, cardHTML, layoutGrid, watchGrid, revealAll, jumpToHash, qs, setQs, ICON_ZOOM, SHIPPING_FLAT };
+  return { loadCatalog, getArt, cart, money, meta, toast, cardHTML, layoutGrid, watchGrid, revealAll, jumpToHash, qs, setQs, ICON_ZOOM, SHIPPING_FLAT };
 })();

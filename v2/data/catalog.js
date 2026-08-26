@@ -6,37 +6,104 @@ window.NE_CATALOG = {
   {
    "id": "cuba",
    "name": "Cuba",
-   "blurb": "Baracoa, Bayamo and Santiago, January 2014"
+   "blurb": "Baracoa, Bayamo and Santiago, January 2014",
+   "collection": "paintings"
   },
   {
    "id": "france",
    "name": "France",
-   "blurb": "Céret, the Roussillon coast and the Tech valley, 2012–2016"
+   "blurb": "Céret, the Roussillon coast and the Tech valley, 2012–2023",
+   "collection": "paintings"
   },
   {
    "id": "spain",
    "name": "Spain",
-   "blurb": "Empúries and L'Escala on the Costa Brava, 2014–2015"
+   "blurb": "Empúries and L'Escala on the Costa Brava, 2014–2015",
+   "collection": "paintings"
   },
   {
    "id": "portugal",
    "name": "Portugal",
-   "blurb": "Porto and the Douro valley, July 2016"
+   "blurb": "Porto and the Douro valley, July 2016",
+   "collection": "paintings"
   },
   {
    "id": "italy",
    "name": "Italy",
-   "blurb": "Umbria and the hills near Perugia, July 2016"
+   "blurb": "Umbria and the hills near Perugia, July 2016",
+   "collection": "paintings"
   },
   {
    "id": "england",
    "name": "England",
-   "blurb": "Cheshire, Staffordshire, Hertfordshire and London, August 2016"
+   "blurb": "Cheshire, Staffordshire, Hertfordshire and London, August 2016",
+   "collection": "paintings"
   },
   {
    "id": "norway",
    "name": "Norway",
-   "blurb": "Rygge and Østfold, August 2016"
+   "blurb": "Rygge and Østfold, August 2016",
+   "collection": "paintings"
+  },
+  {
+   "id": "botanical",
+   "name": "Leaves & Gardens",
+   "blurb": "Plants, leaves and garden corners, close up.",
+   "collection": "paintings"
+  },
+  {
+   "id": "florida",
+   "name": "Florida",
+   "blurb": "Gardens and streets in the American South.",
+   "collection": "paintings"
+  },
+  {
+   "id": "market",
+   "name": "Markets & Table",
+   "blurb": "Market stalls, fish counters and the kitchen table.",
+   "collection": "paintings"
+  },
+  {
+   "id": "studies",
+   "name": "Colour Studies",
+   "blurb": "Landscape reduced to bands and blocks of colour.",
+   "collection": "paintings"
+  },
+  {
+   "id": "drawings-places",
+   "name": "Places & Streets",
+   "blurb": "Houses, streets and rooftops, mostly around Céret.",
+   "collection": "drawings"
+  },
+  {
+   "id": "drawings-trees",
+   "name": "Trees, Gardens & Leaves",
+   "blurb": "Woods, branches and growing things in line alone.",
+   "collection": "drawings"
+  },
+  {
+   "id": "drawings-market",
+   "name": "Markets & Still Life",
+   "blurb": "Sardines, merlu and the fromage counter.",
+   "collection": "drawings"
+  },
+  {
+   "id": "prints",
+   "name": "Linocuts",
+   "blurb": "Rabbits, reeds and moons — cut, printed and coloured.",
+   "collection": "prints"
+  },
+  {
+   "id": "pottery",
+   "name": "Bowls & Vessels",
+   "blurb": "Hand-built earthenware, glazed in strong colour.",
+   "collection": "pottery"
+  },
+  {
+   "id": "collage",
+   "name": "Mixed Media",
+   "blurb": "Torn and painted paper, built up in layers.",
+   "collection": "collage"
   }
  ],
  "artworks": [
@@ -59,7 +126,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5561.jpg",
     "w": 1800,
     "h": 1345
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5562",
@@ -80,7 +148,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5562.jpg",
     "w": 1800,
     "h": 1355
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5563",
@@ -101,7 +170,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5563.jpg",
     "w": 1800,
     "h": 1346
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5564",
@@ -122,7 +192,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5564.jpg",
     "w": 1800,
     "h": 1389
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5565",
@@ -143,7 +214,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5565.jpg",
     "w": 1800,
     "h": 1366
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5566",
@@ -164,7 +236,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5566.jpg",
     "w": 1800,
     "h": 1313
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5567",
@@ -185,7 +258,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5567.jpg",
     "w": 1306,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5568",
@@ -206,7 +280,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5568.jpg",
     "w": 1800,
     "h": 1328
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5569",
@@ -227,7 +302,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5569.jpg",
     "w": 1800,
     "h": 1348
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5570",
@@ -248,7 +324,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5570.jpg",
     "w": 1800,
     "h": 1377
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5571",
@@ -269,7 +346,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5571.jpg",
     "w": 1800,
     "h": 1359
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5572",
@@ -290,7 +368,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5572.jpg",
     "w": 1800,
     "h": 1344
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5573",
@@ -311,7 +390,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5573.jpg",
     "w": 1800,
     "h": 1320
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5574",
@@ -332,7 +412,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5574.jpg",
     "w": 1800,
     "h": 1331
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5575",
@@ -353,7 +434,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5575.jpg",
     "w": 1800,
     "h": 1329
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5576",
@@ -374,7 +456,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5576.jpg",
     "w": 1800,
     "h": 1288
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5577",
@@ -395,7 +478,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5577.jpg",
     "w": 1800,
     "h": 1283
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5578",
@@ -416,7 +500,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5578.jpg",
     "w": 1800,
     "h": 1260
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5579",
@@ -437,7 +522,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5579.jpg",
     "w": 1800,
     "h": 1235
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5580",
@@ -458,7 +544,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5580.jpg",
     "w": 1800,
     "h": 1246
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5581",
@@ -479,7 +566,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5581.jpg",
     "w": 1800,
     "h": 1237
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5582",
@@ -500,7 +588,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5582.jpg",
     "w": 1800,
     "h": 1230
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5583",
@@ -521,7 +610,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5583.jpg",
     "w": 1800,
     "h": 1225
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5584",
@@ -542,7 +632,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5584.jpg",
     "w": 1800,
     "h": 1246
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5585",
@@ -563,7 +654,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5585.jpg",
     "w": 1800,
     "h": 1331
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5586",
@@ -584,7 +676,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5586.jpg",
     "w": 1800,
     "h": 1251
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5587",
@@ -605,7 +698,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5587.jpg",
     "w": 1800,
     "h": 1364
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5588",
@@ -626,7 +720,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5588.jpg",
     "w": 1800,
     "h": 1342
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5589",
@@ -647,7 +742,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5589.jpg",
     "w": 1800,
     "h": 1374
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5590",
@@ -668,7 +764,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5590.jpg",
     "w": 1800,
     "h": 1336
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5591",
@@ -689,7 +786,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5591.jpg",
     "w": 1800,
     "h": 1367
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5592",
@@ -710,7 +808,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5592.jpg",
     "w": 1800,
     "h": 1291
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5593",
@@ -731,7 +830,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5593.jpg",
     "w": 1800,
     "h": 1225
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5594",
@@ -752,7 +852,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5594.jpg",
     "w": 1800,
     "h": 1291
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5595",
@@ -773,7 +874,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5595.jpg",
     "w": 1800,
     "h": 1332
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5596",
@@ -794,7 +896,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5596.jpg",
     "w": 1800,
     "h": 1239
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5597",
@@ -815,7 +918,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5597.jpg",
     "w": 1800,
     "h": 1229
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5598",
@@ -836,7 +940,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5598.jpg",
     "w": 1800,
     "h": 1427
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5599",
@@ -857,7 +962,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5599.jpg",
     "w": 1800,
     "h": 1452
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5600",
@@ -878,7 +984,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5600.jpg",
     "w": 1800,
     "h": 1285
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5601",
@@ -899,7 +1006,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5601.jpg",
     "w": 1800,
     "h": 1382
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5602",
@@ -920,7 +1028,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5602.jpg",
     "w": 1800,
     "h": 1443
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5603",
@@ -941,7 +1050,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5603.jpg",
     "w": 1800,
     "h": 1456
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5604",
@@ -962,7 +1072,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5604.jpg",
     "w": 1800,
     "h": 1458
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5605",
@@ -983,7 +1094,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5605.jpg",
     "w": 1800,
     "h": 1436
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5606",
@@ -1004,7 +1116,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5606.jpg",
     "w": 1800,
     "h": 1355
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5607",
@@ -1025,7 +1138,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5607.jpg",
     "w": 1800,
     "h": 1349
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5608",
@@ -1046,7 +1160,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5608.jpg",
     "w": 1800,
     "h": 1371
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5609",
@@ -1067,7 +1182,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5609.jpg",
     "w": 1800,
     "h": 1360
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5610",
@@ -1088,7 +1204,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5610.jpg",
     "w": 1800,
     "h": 1334
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5611",
@@ -1109,7 +1226,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5611.jpg",
     "w": 1800,
     "h": 1358
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5612",
@@ -1130,7 +1248,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5612.jpg",
     "w": 1800,
     "h": 1399
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5613",
@@ -1151,7 +1270,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5613.jpg",
     "w": 1800,
     "h": 1365
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5614",
@@ -1172,7 +1292,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5614.jpg",
     "w": 1324,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5615",
@@ -1193,7 +1314,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5615.jpg",
     "w": 1323,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5616",
@@ -1214,7 +1336,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5616.jpg",
     "w": 1800,
     "h": 1324
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5617",
@@ -1235,7 +1358,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5617.jpg",
     "w": 1800,
     "h": 1373
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5618",
@@ -1256,7 +1380,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5618.jpg",
     "w": 1800,
     "h": 1356
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5619",
@@ -1277,7 +1402,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5619.jpg",
     "w": 1800,
     "h": 1353
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5620",
@@ -1298,7 +1424,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5620.jpg",
     "w": 1800,
     "h": 1346
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5621",
@@ -1319,7 +1446,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5621.jpg",
     "w": 1800,
     "h": 1372
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5622",
@@ -1340,7 +1468,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5622.jpg",
     "w": 1800,
     "h": 1381
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5623",
@@ -1361,7 +1490,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5623.jpg",
     "w": 1800,
     "h": 1364
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5624",
@@ -1382,7 +1512,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5624.jpg",
     "w": 1800,
     "h": 1322
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5625",
@@ -1403,7 +1534,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5625.jpg",
     "w": 1800,
     "h": 1434
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5626",
@@ -1424,7 +1556,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5626.jpg",
     "w": 1800,
     "h": 1414
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5627",
@@ -1445,7 +1578,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5627.jpg",
     "w": 1800,
     "h": 1413
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5628",
@@ -1466,7 +1600,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5628.jpg",
     "w": 1800,
     "h": 1425
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5629",
@@ -1487,7 +1622,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5629.jpg",
     "w": 1800,
     "h": 1441
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5630",
@@ -1508,7 +1644,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5630.jpg",
     "w": 1800,
     "h": 1259
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5631",
@@ -1529,7 +1666,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5631.jpg",
     "w": 1800,
     "h": 1437
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5632",
@@ -1550,7 +1688,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5632.jpg",
     "w": 1800,
     "h": 1450
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5633",
@@ -1571,7 +1710,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5633.jpg",
     "w": 1800,
     "h": 1381
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5634",
@@ -1592,7 +1732,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5634.jpg",
     "w": 1800,
     "h": 1431
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5635",
@@ -1613,7 +1754,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5635.jpg",
     "w": 1800,
     "h": 1451
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5636",
@@ -1634,7 +1776,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5636.jpg",
     "w": 1800,
     "h": 1426
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5637",
@@ -1655,7 +1798,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5637.jpg",
     "w": 1800,
     "h": 1417
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5638",
@@ -1676,7 +1820,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5638.jpg",
     "w": 1800,
     "h": 1452
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5639",
@@ -1697,7 +1842,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5639.jpg",
     "w": 1800,
     "h": 1442
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5640",
@@ -1718,7 +1864,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5640.jpg",
     "w": 1800,
     "h": 1416
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5641",
@@ -1739,7 +1886,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5641.jpg",
     "w": 1800,
     "h": 1337
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5642",
@@ -1760,7 +1908,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5642.jpg",
     "w": 1800,
     "h": 1335
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5643",
@@ -1781,7 +1930,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5643.jpg",
     "w": 1800,
     "h": 1360
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5644",
@@ -1802,7 +1952,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5644.jpg",
     "w": 1800,
     "h": 1359
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5645",
@@ -1823,7 +1974,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5645.jpg",
     "w": 1800,
     "h": 1375
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5646",
@@ -1844,7 +1996,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5646.jpg",
     "w": 1800,
     "h": 1422
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5647",
@@ -1865,7 +2018,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5647.jpg",
     "w": 1800,
     "h": 1428
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5648",
@@ -1886,7 +2040,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5648.jpg",
     "w": 1800,
     "h": 1421
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5649",
@@ -1907,7 +2062,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5649.jpg",
     "w": 1800,
     "h": 1385
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5650",
@@ -1928,7 +2084,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5650.jpg",
     "w": 1800,
     "h": 1346
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5651",
@@ -1949,7 +2106,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5651.jpg",
     "w": 1800,
     "h": 1341
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5652",
@@ -1970,7 +2128,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5652.jpg",
     "w": 1800,
     "h": 1411
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5653",
@@ -1991,7 +2150,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5653.jpg",
     "w": 1800,
     "h": 1444
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5654",
@@ -2012,7 +2172,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5654.jpg",
     "w": 1800,
     "h": 1412
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5655",
@@ -2033,7 +2194,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5655.jpg",
     "w": 1800,
     "h": 1401
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5656",
@@ -2054,7 +2216,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5656.jpg",
     "w": 1800,
     "h": 1413
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5657",
@@ -2075,7 +2238,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5657.jpg",
     "w": 1800,
     "h": 1425
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5658",
@@ -2096,7 +2260,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5658.jpg",
     "w": 1800,
     "h": 1416
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5659",
@@ -2117,7 +2282,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5659.jpg",
     "w": 1800,
     "h": 1418
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5660",
@@ -2138,7 +2304,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5660.jpg",
     "w": 1800,
     "h": 1405
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5661",
@@ -2159,7 +2326,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5661.jpg",
     "w": 1800,
     "h": 1376
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5662",
@@ -2180,7 +2348,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5662.jpg",
     "w": 1800,
     "h": 1320
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5663",
@@ -2201,7 +2370,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5663.jpg",
     "w": 1800,
     "h": 1190
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5664",
@@ -2222,7 +2392,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5664.jpg",
     "w": 1184,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5665",
@@ -2243,7 +2414,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5665.jpg",
     "w": 1249,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5666",
@@ -2264,7 +2436,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5666.jpg",
     "w": 1308,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5667",
@@ -2285,7 +2458,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5667.jpg",
     "w": 1800,
     "h": 1346
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5668",
@@ -2306,7 +2480,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5668.jpg",
     "w": 1800,
     "h": 1352
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5669",
@@ -2327,7 +2502,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5669.jpg",
     "w": 1800,
     "h": 1346
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5671",
@@ -2348,7 +2524,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5671.jpg",
     "w": 1800,
     "h": 1367
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5672",
@@ -2369,7 +2546,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5672.jpg",
     "w": 1800,
     "h": 1336
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5673",
@@ -2390,7 +2568,8 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5673.jpg",
     "w": 1352,
     "h": 1800
-   }
+   },
+   "collection": "paintings"
   },
   {
    "id": "5675",
@@ -2411,7 +2590,3291 @@ window.NE_CATALOG = {
     "thumb": "../img/thumb/5675.jpg",
     "w": 1800,
     "h": 1392
+   },
+   "collection": "paintings"
+  },
+  {
+   "id": "a001",
+   "title": "Study 1",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a001.jpg",
+    "thumb": "../img/thumb/a001.jpg",
+    "w": 1800,
+    "h": 1350
    }
+  },
+  {
+   "id": "a002",
+   "title": "The Garden Fence",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a002.jpg",
+    "thumb": "../img/thumb/a002.jpg",
+    "w": 1800,
+    "h": 1421
+   }
+  },
+  {
+   "id": "a003",
+   "title": "Study 2",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a003.jpg",
+    "thumb": "../img/thumb/a003.jpg",
+    "w": 1355,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a004",
+   "title": "Fromage at the Market",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a004.jpg",
+    "thumb": "../img/thumb/a004.jpg",
+    "w": 1800,
+    "h": 1353
+   }
+  },
+  {
+   "id": "a005",
+   "title": "Imaginary Forest",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": true,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a005.jpg",
+    "thumb": "../img/thumb/a005.jpg",
+    "w": 1800,
+    "h": 1338
+   }
+  },
+  {
+   "id": "a007",
+   "title": "In the Still of the Woods",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a007.jpg",
+    "thumb": "../img/thumb/a007.jpg",
+    "w": 1800,
+    "h": 1507
+   }
+  },
+  {
+   "id": "a008",
+   "title": "Study 1",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a008.jpg",
+    "thumb": "../img/thumb/a008.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a009",
+   "title": "Drawing 2",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a009.jpg",
+    "thumb": "../img/thumb/a009.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a010",
+   "title": "Study 3",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a010.jpg",
+    "thumb": "../img/thumb/a010.jpg",
+    "w": 1800,
+    "h": 1739
+   }
+  },
+  {
+   "id": "a011",
+   "title": "Morning Walk",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a011.jpg",
+    "thumb": "../img/thumb/a011.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a012",
+   "title": "Study 1",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a012.jpg",
+    "thumb": "../img/thumb/a012.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a013",
+   "title": "Flamingo Gardens, Davie",
+   "place": "Davie, Florida",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a013.jpg",
+    "thumb": "../img/thumb/a013.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a014",
+   "title": "Study 4",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a014.jpg",
+    "thumb": "../img/thumb/a014.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a016",
+   "title": "Mayfair, Florida",
+   "place": "Florida",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a016.jpg",
+    "thumb": "../img/thumb/a016.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a017",
+   "title": "Drawing 6",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a017.jpg",
+    "thumb": "../img/thumb/a017.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a018",
+   "title": "Bowl 1",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "5 in diameter",
+   "price": 85,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a018.jpg",
+    "thumb": "../img/thumb/a018.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a019",
+   "title": "Drawing 7",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a019.jpg",
+    "thumb": "../img/thumb/a019.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a020",
+   "title": "Chez Mioche",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a020.jpg",
+    "thumb": "../img/thumb/a020.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a021",
+   "title": "Recyclables",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a021.jpg",
+    "thumb": "../img/thumb/a021.jpg",
+    "w": 1800,
+    "h": 1559
+   }
+  },
+  {
+   "id": "a022",
+   "title": "Up in the Branches",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a022.jpg",
+    "thumb": "../img/thumb/a022.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a023",
+   "title": "Drawing 10",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a023.jpg",
+    "thumb": "../img/thumb/a023.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a024",
+   "title": "Study 5",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a024.jpg",
+    "thumb": "../img/thumb/a024.jpg",
+    "w": 1800,
+    "h": 1012
+   }
+  },
+  {
+   "id": "a025",
+   "title": "Drawing 11",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a025.jpg",
+    "thumb": "../img/thumb/a025.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a026",
+   "title": "Study 6",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a026.jpg",
+    "thumb": "../img/thumb/a026.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a028",
+   "title": "Study 2",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a028.jpg",
+    "thumb": "../img/thumb/a028.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a029",
+   "title": "Study 3",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a029.jpg",
+    "thumb": "../img/thumb/a029.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a030",
+   "title": "Striped Grass",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a030.jpg",
+    "thumb": "../img/thumb/a030.jpg",
+    "w": 1800,
+    "h": 1237
+   }
+  },
+  {
+   "id": "a031",
+   "title": "Study 7",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a031.jpg",
+    "thumb": "../img/thumb/a031.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a032",
+   "title": "Study 8",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a032.jpg",
+    "thumb": "../img/thumb/a032.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a033",
+   "title": "Study 1",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a033.jpg",
+    "thumb": "../img/thumb/a033.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a034",
+   "title": "Bowl 2",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "6 in diameter",
+   "price": 120,
+   "status": "available",
+   "featured": true,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a034.jpg",
+    "thumb": "../img/thumb/a034.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a035",
+   "title": "Oak Bluffs, Martha's Vineyard",
+   "place": "Oak Bluffs, Martha's Vineyard",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a035.jpg",
+    "thumb": "../img/thumb/a035.jpg",
+    "w": 1800,
+    "h": 1234
+   }
+  },
+  {
+   "id": "a036",
+   "title": "Study 2",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a036.jpg",
+    "thumb": "../img/thumb/a036.jpg",
+    "w": 1800,
+    "h": 1375
+   }
+  },
+  {
+   "id": "a037",
+   "title": "Brandon Street, Seattle",
+   "place": "Seattle",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 2011,
+   "date": "May 2011",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a037.jpg",
+    "thumb": "../img/thumb/a037.jpg",
+    "w": 1800,
+    "h": 1440
+   }
+  },
+  {
+   "id": "a038",
+   "title": "Sardines for Dinner",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a038.jpg",
+    "thumb": "../img/thumb/a038.jpg",
+    "w": 1800,
+    "h": 1533
+   }
+  },
+  {
+   "id": "a039",
+   "title": "Study 9",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a039.jpg",
+    "thumb": "../img/thumb/a039.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a040",
+   "title": "Study 10",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a040.jpg",
+    "thumb": "../img/thumb/a040.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a041",
+   "title": "Bowl 3",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a041.jpg",
+    "thumb": "../img/thumb/a041.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a042",
+   "title": "Study 2",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a042.jpg",
+    "thumb": "../img/thumb/a042.jpg",
+    "w": 1355,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a043",
+   "title": "Study 11",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a043.jpg",
+    "thumb": "../img/thumb/a043.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a044",
+   "title": "Study 12",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a044.jpg",
+    "thumb": "../img/thumb/a044.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a045",
+   "title": "Bowl 4",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "5 in diameter",
+   "price": 85,
+   "status": "available",
+   "featured": true,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a045.jpg",
+    "thumb": "../img/thumb/a045.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a047",
+   "title": "Study 13",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a047.jpg",
+    "thumb": "../img/thumb/a047.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a048",
+   "title": "Bedroom View",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a048.jpg",
+    "thumb": "../img/thumb/a048.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a050",
+   "title": "Snack Bar, Plantation Gardens",
+   "place": "Plantation Gardens, Florida",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a050.jpg",
+    "thumb": "../img/thumb/a050.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a051",
+   "title": "Bowl 5",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "5 in diameter",
+   "price": 85,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a051.jpg",
+    "thumb": "../img/thumb/a051.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a052",
+   "title": "Happy New Year",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a052.jpg",
+    "thumb": "../img/thumb/a052.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a053",
+   "title": "Study 15",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a053.jpg",
+    "thumb": "../img/thumb/a053.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a054",
+   "title": "Barn Beyond the Garden",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a054.jpg",
+    "thumb": "../img/thumb/a054.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a055",
+   "title": "Study 4",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a055.jpg",
+    "thumb": "../img/thumb/a055.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a056",
+   "title": "Sardines",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a056.jpg",
+    "thumb": "../img/thumb/a056.jpg",
+    "w": 1353,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a057",
+   "title": "Road from Figueres",
+   "place": "Figueres, Spain",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a057.jpg",
+    "thumb": "../img/thumb/a057.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a059",
+   "title": "View from the Lido Parking Lot",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a059.jpg",
+    "thumb": "../img/thumb/a059.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a060",
+   "title": "Backyard Tomatoes",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a060.jpg",
+    "thumb": "../img/thumb/a060.jpg",
+    "w": 1800,
+    "h": 1367
+   }
+  },
+  {
+   "id": "a061",
+   "title": "Trees at the Dump",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a061.jpg",
+    "thumb": "../img/thumb/a061.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a062",
+   "title": "Bowl 6",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a062.jpg",
+    "thumb": "../img/thumb/a062.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a063",
+   "title": "One Way Up",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a063.jpg",
+    "thumb": "../img/thumb/a063.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a064",
+   "title": "The Cypress in Céret",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": true,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a064.jpg",
+    "thumb": "../img/thumb/a064.jpg",
+    "w": 1800,
+    "h": 1309
+   }
+  },
+  {
+   "id": "a065",
+   "title": "Bowl 7",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a065.jpg",
+    "thumb": "../img/thumb/a065.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a066",
+   "title": "Sardines from Auchan",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a066.jpg",
+    "thumb": "../img/thumb/a066.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a067",
+   "title": "Aubergine Tulips",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 2021,
+   "date": "May 2021",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a067.jpg",
+    "thumb": "../img/thumb/a067.jpg",
+    "w": 1800,
+    "h": 1628
+   }
+  },
+  {
+   "id": "a068",
+   "title": "Bar Fish at Auchan",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a068.jpg",
+    "thumb": "../img/thumb/a068.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a069",
+   "title": "View from the Bedroom",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a069.jpg",
+    "thumb": "../img/thumb/a069.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a070",
+   "title": "The Dentist's Jardin",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a070.jpg",
+    "thumb": "../img/thumb/a070.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a071",
+   "title": "Avenue of Les Cigales",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a071.jpg",
+    "thumb": "../img/thumb/a071.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a072",
+   "title": "Drawing 25",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a072.jpg",
+    "thumb": "../img/thumb/a072.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a073",
+   "title": "Study 3",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a073.jpg",
+    "thumb": "../img/thumb/a073.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a074",
+   "title": "Path to the Recyclables",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a074.jpg",
+    "thumb": "../img/thumb/a074.jpg",
+    "w": 1800,
+    "h": 1594
+   }
+  },
+  {
+   "id": "a075",
+   "title": "Home in the Trees",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a075.jpg",
+    "thumb": "../img/thumb/a075.jpg",
+    "w": 1800,
+    "h": 1341
+   }
+  },
+  {
+   "id": "a077",
+   "title": "Study 16",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a077.jpg",
+    "thumb": "../img/thumb/a077.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a078",
+   "title": "Into the Woods",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a078.jpg",
+    "thumb": "../img/thumb/a078.jpg",
+    "w": 1800,
+    "h": 1344
+   }
+  },
+  {
+   "id": "a079",
+   "title": "Drawing 9",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a079.jpg",
+    "thumb": "../img/thumb/a079.jpg",
+    "w": 1800,
+    "h": 1348
+   }
+  },
+  {
+   "id": "a080",
+   "title": "Drawing 27",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a080.jpg",
+    "thumb": "../img/thumb/a080.jpg",
+    "w": 1800,
+    "h": 1510
+   }
+  },
+  {
+   "id": "a081",
+   "title": "Study 4",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a081.jpg",
+    "thumb": "../img/thumb/a081.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a082",
+   "title": "Rooftop View",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a082.jpg",
+    "thumb": "../img/thumb/a082.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a083",
+   "title": "Study 5",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a083.jpg",
+    "thumb": "../img/thumb/a083.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a084",
+   "title": "Study 17",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a084.jpg",
+    "thumb": "../img/thumb/a084.jpg",
+    "w": 1800,
+    "h": 1354
+   }
+  },
+  {
+   "id": "a085",
+   "title": "Lakeland, Florida",
+   "place": "Lakeland, Florida",
+   "series": "florida",
+   "seriesName": "Florida",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a085.jpg",
+    "thumb": "../img/thumb/a085.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a086",
+   "title": "Study 6",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a086.jpg",
+    "thumb": "../img/thumb/a086.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a087",
+   "title": "Drawing 28",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a087.jpg",
+    "thumb": "../img/thumb/a087.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a088",
+   "title": "Study 7",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a088.jpg",
+    "thumb": "../img/thumb/a088.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a089",
+   "title": "Drawing 29",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a089.jpg",
+    "thumb": "../img/thumb/a089.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a090",
+   "title": "Study 8",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a090.jpg",
+    "thumb": "../img/thumb/a090.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a092",
+   "title": "Study 6",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a092.jpg",
+    "thumb": "../img/thumb/a092.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a093",
+   "title": "Drawing 30",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a093.jpg",
+    "thumb": "../img/thumb/a093.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a094",
+   "title": "Goat and Pig House",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a094.jpg",
+    "thumb": "../img/thumb/a094.jpg",
+    "w": 1800,
+    "h": 1469
+   }
+  },
+  {
+   "id": "a095",
+   "title": "Bowl 8",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a095.jpg",
+    "thumb": "../img/thumb/a095.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a096",
+   "title": "The Dentist's House",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a096.jpg",
+    "thumb": "../img/thumb/a096.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a097",
+   "title": "Bowl 9",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "6 in diameter",
+   "price": 120,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a097.jpg",
+    "thumb": "../img/thumb/a097.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a099",
+   "title": "La Playa en L'Escala",
+   "place": "L'Escala, Spain",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a099.jpg",
+    "thumb": "../img/thumb/a099.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a100",
+   "title": "Study 10",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a100.jpg",
+    "thumb": "../img/thumb/a100.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a101",
+   "title": "View from the Rooftop Terrace",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a101.jpg",
+    "thumb": "../img/thumb/a101.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a102",
+   "title": "Oakleaf Hydrangea",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 2021,
+   "date": "May 2021",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a102.jpg",
+    "thumb": "../img/thumb/a102.jpg",
+    "w": 1800,
+    "h": 1489
+   }
+  },
+  {
+   "id": "a103",
+   "title": "Study 11",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a103.jpg",
+    "thumb": "../img/thumb/a103.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a104",
+   "title": "Bowl 10",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a104.jpg",
+    "thumb": "../img/thumb/a104.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a105",
+   "title": "Goat House in the Trees",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a105.jpg",
+    "thumb": "../img/thumb/a105.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a106",
+   "title": "Street Plane Trees",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a106.jpg",
+    "thumb": "../img/thumb/a106.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a107",
+   "title": "Run, Rabbit, Run",
+   "place": "",
+   "series": "prints",
+   "seriesName": "Linocuts",
+   "collection": "prints",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut on paper",
+   "size": "11 × 14 in",
+   "price": 160,
+   "status": "available",
+   "featured": true,
+   "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
+   "image": {
+    "large": "../img/large/a107.jpg",
+    "thumb": "../img/thumb/a107.jpg",
+    "w": 1800,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a108",
+   "title": "Hollis Garden Cabbage",
+   "place": "",
+   "series": "florida",
+   "seriesName": "Florida",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a108.jpg",
+    "thumb": "../img/thumb/a108.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a109",
+   "title": "Study 18",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a109.jpg",
+    "thumb": "../img/thumb/a109.jpg",
+    "w": 1355,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a110",
+   "title": "Bowl 11",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a110.jpg",
+    "thumb": "../img/thumb/a110.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a112",
+   "title": "Study 7",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a112.jpg",
+    "thumb": "../img/thumb/a112.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a113",
+   "title": "Study 8",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a113.jpg",
+    "thumb": "../img/thumb/a113.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a114",
+   "title": "Study 19",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a114.jpg",
+    "thumb": "../img/thumb/a114.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a115",
+   "title": "Chestnut Tree Leaves",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a115.jpg",
+    "thumb": "../img/thumb/a115.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a116",
+   "title": "Drawing 34",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a116.jpg",
+    "thumb": "../img/thumb/a116.jpg",
+    "w": 1800,
+    "h": 1437
+   }
+  },
+  {
+   "id": "a117",
+   "title": "Study 9",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a117.jpg",
+    "thumb": "../img/thumb/a117.jpg",
+    "w": 1800,
+    "h": 1738
+   }
+  },
+  {
+   "id": "a118",
+   "title": "It's Only a Paper Moon",
+   "place": "",
+   "series": "prints",
+   "seriesName": "Linocuts",
+   "collection": "prints",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut on paper",
+   "size": "8 × 10 in",
+   "price": 120,
+   "status": "available",
+   "featured": false,
+   "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
+   "image": {
+    "large": "../img/large/a118.jpg",
+    "thumb": "../img/thumb/a118.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a121",
+   "title": "Rabbits in the Reeds",
+   "place": "",
+   "series": "prints",
+   "seriesName": "Linocuts",
+   "collection": "prints",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut on paper",
+   "size": "11 × 14 in",
+   "price": 160,
+   "status": "available",
+   "featured": true,
+   "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
+   "image": {
+    "large": "../img/large/a121.jpg",
+    "thumb": "../img/thumb/a121.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a122",
+   "title": "Rabbits and Fishes",
+   "place": "",
+   "series": "prints",
+   "seriesName": "Linocuts",
+   "collection": "prints",
+   "year": 0,
+   "date": "",
+   "medium": "Linocut on paper",
+   "size": "8 × 10 in",
+   "price": 120,
+   "status": "available",
+   "featured": false,
+   "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
+   "image": {
+    "large": "../img/large/a122.jpg",
+    "thumb": "../img/thumb/a122.jpg",
+    "w": 1299,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a123",
+   "title": "Drawing 14",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a123.jpg",
+    "thumb": "../img/thumb/a123.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a124",
+   "title": "Recyclables",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a124.jpg",
+    "thumb": "../img/thumb/a124.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a125",
+   "title": "The Little House",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 2021,
+   "date": "May 2021",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a125.jpg",
+    "thumb": "../img/thumb/a125.jpg",
+    "w": 1800,
+    "h": 1511
+   }
+  },
+  {
+   "id": "a126",
+   "title": "Céret Hotel",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a126.jpg",
+    "thumb": "../img/thumb/a126.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a127",
+   "title": "Study 14",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a127.jpg",
+    "thumb": "../img/thumb/a127.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a128",
+   "title": "Road to Banyuls",
+   "place": "Banyuls, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 2023,
+   "date": "July 2023",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a128.jpg",
+    "thumb": "../img/thumb/a128.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a129",
+   "title": "Backyard View",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a129.jpg",
+    "thumb": "../img/thumb/a129.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a130",
+   "title": "View from the Bedroom",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a130.jpg",
+    "thumb": "../img/thumb/a130.jpg",
+    "w": 1627,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a132",
+   "title": "Drawing 38",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a132.jpg",
+    "thumb": "../img/thumb/a132.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a134",
+   "title": "Bowl 12",
+   "place": "",
+   "series": "pottery",
+   "seriesName": "Bowls & Vessels",
+   "collection": "pottery",
+   "year": 0,
+   "date": "",
+   "medium": "Hand-built glazed ceramic",
+   "size": "7 in diameter",
+   "price": 165,
+   "status": "available",
+   "featured": false,
+   "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
+   "image": {
+    "large": "../img/large/a134.jpg",
+    "thumb": "../img/thumb/a134.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a135",
+   "title": "Study 16",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a135.jpg",
+    "thumb": "../img/thumb/a135.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a138",
+   "title": "Study 10",
+   "place": "",
+   "series": "studies",
+   "seriesName": "Colour Studies",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a138.jpg",
+    "thumb": "../img/thumb/a138.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a141",
+   "title": "A Day in Céret",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a141.jpg",
+    "thumb": "../img/thumb/a141.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a142",
+   "title": "Road to Perpignan",
+   "place": "Perpignan, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a142.jpg",
+    "thumb": "../img/thumb/a142.jpg",
+    "w": 1800,
+    "h": 1302
+   }
+  },
+  {
+   "id": "a143",
+   "title": "Merlu on Sale",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": true,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a143.jpg",
+    "thumb": "../img/thumb/a143.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a144",
+   "title": "Rooftop Terrace View of Fields",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a144.jpg",
+    "thumb": "../img/thumb/a144.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a146",
+   "title": "Roof Terrace View",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a146.jpg",
+    "thumb": "../img/thumb/a146.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a147",
+   "title": "View from the Rooftop",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a147.jpg",
+    "thumb": "../img/thumb/a147.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a148",
+   "title": "The Town Wall",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a148.jpg",
+    "thumb": "../img/thumb/a148.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a151",
+   "title": "Chestnut Tree Leaves",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a151.jpg",
+    "thumb": "../img/thumb/a151.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a152",
+   "title": "The Dentist's Garden Wall",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a152.jpg",
+    "thumb": "../img/thumb/a152.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a153",
+   "title": "Town Trees in Summer",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a153.jpg",
+    "thumb": "../img/thumb/a153.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a154",
+   "title": "Town Street, Céret",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a154.jpg",
+    "thumb": "../img/thumb/a154.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a155",
+   "title": "Francis & Helen's Pool House",
+   "place": "Espagne",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 2022,
+   "date": "2022",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a155.jpg",
+    "thumb": "../img/thumb/a155.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a156",
+   "title": "Drawing 7",
+   "place": "",
+   "series": "drawings-market",
+   "seriesName": "Markets & Still Life",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a156.jpg",
+    "thumb": "../img/thumb/a156.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a158",
+   "title": "Collage 1",
+   "place": "",
+   "series": "collage",
+   "seriesName": "Mixed Media",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Mixed media collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": true,
+   "description": "Torn paper, paint and printed fragments built up into a landscape. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a158.jpg",
+    "thumb": "../img/thumb/a158.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a159",
+   "title": "Collage 2",
+   "place": "",
+   "series": "collage",
+   "seriesName": "Mixed Media",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Mixed media collage on paper",
+   "size": "12 × 16 in",
+   "price": 475,
+   "status": "available",
+   "featured": false,
+   "description": "Torn paper, paint and printed fragments built up into a landscape. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a159.jpg",
+    "thumb": "../img/thumb/a159.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a160",
+   "title": "Collage 3",
+   "place": "",
+   "series": "collage",
+   "seriesName": "Mixed Media",
+   "collection": "collage",
+   "year": 0,
+   "date": "",
+   "medium": "Mixed media collage on paper",
+   "size": "11 × 14 in",
+   "price": 395,
+   "status": "available",
+   "featured": false,
+   "description": "Torn paper, paint and printed fragments built up into a landscape. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a160.jpg",
+    "thumb": "../img/thumb/a160.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a161",
+   "title": "Drawing 17",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "11 × 14 in",
+   "price": 280,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a161.jpg",
+    "thumb": "../img/thumb/a161.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a162",
+   "title": "Drawing 18",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a162.jpg",
+    "thumb": "../img/thumb/a162.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a163",
+   "title": "Drawing 19",
+   "place": "",
+   "series": "drawings-trees",
+   "seriesName": "Trees, Gardens & Leaves",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "9 × 12 in",
+   "price": 220,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a163.jpg",
+    "thumb": "../img/thumb/a163.jpg",
+    "w": 1350,
+    "h": 1800
+   }
+  },
+  {
+   "id": "a164",
+   "title": "Study 20",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "8 × 10 in",
+   "price": 275,
+   "status": "available",
+   "featured": true,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a164.jpg",
+    "thumb": "../img/thumb/a164.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a165",
+   "title": "Study 21",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a165.jpg",
+    "thumb": "../img/thumb/a165.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a166",
+   "title": "Study 22",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a166.jpg",
+    "thumb": "../img/thumb/a166.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a168",
+   "title": "Drawing 48",
+   "place": "Céret, France",
+   "series": "drawings-places",
+   "seriesName": "Places & Streets",
+   "collection": "drawings",
+   "year": 0,
+   "date": "",
+   "medium": "Pen and ink on paper",
+   "size": "8 × 10 in",
+   "price": 180,
+   "status": "available",
+   "featured": false,
+   "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
+   "image": {
+    "large": "../img/large/a168.jpg",
+    "thumb": "../img/thumb/a168.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a169",
+   "title": "Study 17",
+   "place": "Céret, France",
+   "series": "france",
+   "seriesName": "France",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "9 × 12 in",
+   "price": 325,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a169.jpg",
+    "thumb": "../img/thumb/a169.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a170",
+   "title": "Study 3",
+   "place": "",
+   "series": "market",
+   "seriesName": "Markets & Table",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "11 × 14 in",
+   "price": 425,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a170.jpg",
+    "thumb": "../img/thumb/a170.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  },
+  {
+   "id": "a171",
+   "title": "Study 23",
+   "place": "",
+   "series": "botanical",
+   "seriesName": "Leaves & Gardens",
+   "collection": "paintings",
+   "year": 0,
+   "date": "",
+   "medium": "Ink and gouache on paper",
+   "size": "12 × 16 in",
+   "price": 550,
+   "status": "available",
+   "featured": false,
+   "description": "Painted on location in gouache and ink. Sold unframed; ships flat, protected between archival boards.",
+   "image": {
+    "large": "../img/large/a171.jpg",
+    "thumb": "../img/thumb/a171.jpg",
+    "w": 1800,
+    "h": 1350
+   }
+  }
+ ],
+ "collections": [
+  {
+   "id": "paintings",
+   "name": "Paintings",
+   "blurb": "Gouache and ink on paper, painted on location."
+  },
+  {
+   "id": "drawings",
+   "name": "Drawings",
+   "blurb": "Pen and ink, drawn straight into the sketchbook."
+  },
+  {
+   "id": "prints",
+   "name": "Prints",
+   "blurb": "Linocuts, hand-printed and hand-coloured."
+  },
+  {
+   "id": "pottery",
+   "name": "Pottery",
+   "blurb": "Hand-built bowls and vessels, thrown and glazed by the artist."
+  },
+  {
+   "id": "collage",
+   "name": "Collage",
+   "blurb": "Mixed media — torn paper, paint and print."
   }
  ]
 };

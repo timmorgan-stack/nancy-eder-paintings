@@ -228,6 +228,7 @@ body.lb-open { overflow: hidden; }
 .art__panel { position: sticky; top: 96px; }
 .art__panel h1 { font-size: clamp(1.8rem, 3vw, 2.4rem); }
 .spec { list-style: none; margin: 0 0 24px; padding: 0; border-top: 1px solid var(--line); }
+.spec li[hidden] { display: none; }
 .spec li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
 .spec li span:first-child { color: var(--muted); }
 .price { font-family: var(--serif); font-size: 1.9rem; margin: 8px 0 20px; }
@@ -494,3 +495,8 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .timeline span { font-size: .85rem; color: var(--muted); display: block; max-width: 22ch; }
 @media (max-width: 860px) { .timeline { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .timeline { grid-template-columns: 1fr; } .timeline li { padding-right: 0; } }
+
+/* ---------- About: studio photograph ---------- */
+.studio { margin: 0; }
+.studio img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
+.studio figcaption { font-size: .82rem; color: var(--muted); margin-top: 12px; }

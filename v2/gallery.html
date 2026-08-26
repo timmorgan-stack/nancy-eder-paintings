@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work — Nancy Eder</title>
-  <meta name="description" content="Browse Nancy Eder's sketchbooks by trip — Cuba, France, Spain, Portugal, Italy, England and Norway — or search the paintings. Original gouache and ink landscapes available to purchase.">
+  <meta name="description" content="Browse Nancy Eder's paintings, pen-and-ink drawings, linocuts, pottery and collage. Original works available to purchase.">
   <link rel="icon" href="../img/site/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/site.css">
 </head>
@@ -12,32 +12,32 @@
   <div data-region="header"></div>
 
   <main data-region="main">
-    <!-- Intro, search, sketchbook tiles -->
+    <!-- Intro, search, tiles -->
     <section class="section section--tight" data-hook="gallery-intro">
       <div class="wrap">
         <div class="section-head" style="margin-bottom:20px">
           <div>
-            <div class="eyebrow">Gallery</div>
-            <h1 style="margin:0">Work</h1>
+            <div class="eyebrow" data-crumbs>Gallery</div>
+            <h1 style="margin:0" data-page-title>Work</h1>
           </div>
-          <p class="lede" style="margin:0;max-width:46ch;font-size:1rem">The paintings are organised by sketchbook — one for each trip. Pick a sketchbook to browse it page by page, search for a place or subject, or scroll the overview for a taste of each.</p>
+          <p class="lede" style="margin:0;max-width:46ch;font-size:1rem" data-page-intro>Nancy works in gouache, in pen and ink, in lino and in clay. Start with a collection, or search for a place or a subject.</p>
         </div>
 
         <form class="search" role="search" data-search-form data-hook="gallery-search">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          <label class="visually-hidden" for="q">Search the paintings</label>
-          <input id="q" name="q" type="search" placeholder="Search paintings — e.g. Porto, garden, boats, 2014…" autocomplete="off" data-search>
+          <label class="visually-hidden" for="q">Search the work</label>
+          <input id="q" name="q" type="search" placeholder="Search — e.g. Céret, sardines, rabbit, bowl, leaves…" autocomplete="off" data-search>
           <button type="button" class="search__clear" data-search-clear aria-label="Clear search" hidden>×</button>
         </form>
 
-        <div class="trip-tiles" data-trip-tiles></div>
+        <div class="trip-tiles" data-tiles></div>
       </div>
     </section>
 
-    <!-- Sticky trip switcher, appears once the tiles have scrolled away -->
+    <!-- Sticky switcher -->
     <div class="trip-bar" data-trip-bar hidden>
       <div class="wrap trip-bar__inner">
-        <div class="trip-bar__chips" data-trip-chips></div>
+        <div class="trip-bar__chips" data-chips></div>
         <form class="search search--compact" role="search" data-search-form>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
           <label class="visually-hidden" for="q2">Search</label>
@@ -47,19 +47,19 @@
       </div>
     </div>
 
-    <!-- Overview: a row per trip -->
+    <!-- Overview: a row per collection, or a row per series inside a collection -->
     <section class="section section--tight" data-overview hidden data-hook="gallery-overview">
       <div class="wrap" data-overview-wrap></div>
     </section>
 
-    <!-- Single trip OR search results, paginated -->
-    <section class="section section--tight" data-trip hidden data-hook="gallery-trip">
+    <!-- A single set (series, collection or search results), paginated -->
+    <section class="section section--tight" data-set hidden data-hook="gallery-set">
       <div class="wrap">
         <header class="trip-head">
           <div>
-            <div class="eyebrow" data-trip-eyebrow>Sketchbook</div>
-            <h2 data-trip-title style="margin:0 0 .3em"></h2>
-            <p class="muted" data-trip-blurb style="margin:0"></p>
+            <div class="eyebrow" data-set-eyebrow></div>
+            <h2 data-set-title style="margin:0 0 .3em"></h2>
+            <p class="muted" data-set-blurb style="margin:0"></p>
           </div>
           <div class="filters" style="margin:0" role="toolbar" aria-label="Filter works">
             <select data-status aria-label="Availability">
@@ -83,9 +83,9 @@
         </header>
         <div class="result-count" data-count aria-live="polite"></div>
         <div class="grid" data-grid></div>
-        <div class="empty" data-empty hidden>Nothing matches. Try a place (“Céret”, “Porto”), a subject (“market”, “garden”, “boats”) or a year.</div>
+        <div class="empty" data-empty hidden>Nothing matches. Try a place (“Céret”, “Porto”), a subject (“sardines”, “leaves”, “rabbit”) or a material (“linocut”, “ceramic”).</div>
         <nav class="pager" data-pager aria-label="Pages"></nav>
-        <nav class="trip-next" data-trip-next aria-label="Other sketchbooks"></nav>
+        <nav class="trip-next" data-next aria-label="Other sets"></nav>
       </div>
     </section>
   </main>
@@ -100,14 +100,24 @@
       const cat = await NE.loadCatalog();
       const PER_KEY = 'ne_per_page';
       const $ = (s, r = document) => r.querySelector(s);
-      const tiles = $('[data-trip-tiles]'), bar = $('[data-trip-bar]'), chips = $('[data-trip-chips]');
+      const tiles = $('[data-tiles]'), bar = $('[data-trip-bar]'), chips = $('[data-chips]');
       const overview = $('[data-overview]'), overviewWrap = $('[data-overview-wrap]');
-      const trip = $('[data-trip]'), grid = $('[data-grid]'), pager = $('[data-pager]'), tripNext = $('[data-trip-next]');
+      const setSec = $('[data-set]'), grid = $('[data-grid]'), pager = $('[data-pager]'), nextNav = $('[data-next]');
       const statusSel = $('[data-status]'), sortSel = $('[data-sort]'), perSel = $('[data-per]');
-      const searchInputs = [...document.querySelectorAll('[data-search]')], searchClears = [...document.querySelectorAll('[data-search-clear]')];
+      const searchInputs = [...document.querySelectorAll('[data-search]')];
+      const searchClears = [...document.querySelectorAll('[data-search-clear]')];
       const setSearchValue = (v) => searchInputs.forEach(i => { if (i.value !== v) i.value = v; });
 
+      const collections = cat.collections;
+      const seriesOf = (cid) => cat.series.filter(s => s.collection === cid);
+      const byCollection = (cid) => cat.artworks.filter(a => a.collection === cid);
+      const bySeries = (sid) => cat.artworks.filter(a => a.series === sid);
+      const findCol = (id) => collections.find(c => c.id === id);
+      const findSer = (id) => cat.series.find(s => s.id === id);
+      const cover = (list) => list.find(a => a.featured) || list[0];
+
       const state = {
+        collection: NE.qs('collection') || 'all',
         series: NE.qs('series') || 'all',
         status: NE.qs('status') || 'all',
         sort: NE.qs('sort') || 'default',
@@ -115,67 +125,55 @@
         per: NE.qs('per') || localStorage.getItem(PER_KEY) || '10',
         page: Math.max(1, parseInt(NE.qs('page') || '1', 10))
       };
+      if (!findCol(state.collection)) state.collection = 'all';
+      if (!findSer(state.series)) state.series = 'all';
+      // a series implies its collection
+      if (state.series !== 'all') state.collection = findSer(state.series).collection;
       if (![...perSel.options].some(o => o.value === state.per)) state.per = '10';
       statusSel.value = state.status; sortSel.value = state.sort; perSel.value = state.per; setSearchValue(state.q);
-      // Page size snaps to whole rows: the nearest multiple of the current column count to the chosen size
-      // (3 columns → 9, 4 → 12, 2 → 10), so the last row is never left with a widow.
-      const columns = () => {
-        const cols = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
-        return Math.max(1, cols || 1);
-      };
-      const perPage = () => {
-        if (state.per === 'all') return Infinity;
-        const cols = columns(), target = Number(state.per);
-        return Math.max(cols, Math.round(target / cols) * cols);
-      };
+
+      // Page size snaps to whole rows so the last row is never left with a widow
+      const columns = () => Math.max(1, getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length || 1);
+      const perPage = () => state.per === 'all' ? Infinity
+        : Math.max(columns(), Math.round(Number(state.per) / columns()) * columns());
       const labelPerOptions = () => {
         const cols = columns();
         [...perSel.options].forEach(o => { if (o.value !== 'all') o.textContent = `${Math.max(cols, Math.round(Number(o.value) / cols) * cols)} per page`; });
       };
 
-      const bySeries = (id) => cat.artworks.filter(a => a.series === id);
-      const cover = (id) => { const w = bySeries(id); return w.find(a => a.featured) || w[0]; };
       const sortList = (list) => {
         list = list.slice();
         if (state.sort === 'price-asc') list.sort((a, b) => a.price - b.price);
         else if (state.sort === 'price-desc') list.sort((a, b) => b.price - a.price);
-        else if (state.sort === 'newest') list.sort((a, b) => (b.year - a.year) || (Number(b.id) - Number(a.id)));
+        else if (state.sort === 'newest') list.sort((a, b) => (b.year - a.year) || String(b.id).localeCompare(String(a.id)));
         else list.sort((a, b) => (b.featured - a.featured));
         return list;
       };
 
-      /* ---- Search: every word must match somewhere in title / place / trip / date / medium / ref ---- */
-      const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      const hay = new Map(cat.artworks.map(a => [a.id, norm([a.title, a.place, a.seriesName, a.date, a.year, a.medium, 'NE-' + a.id, a.status].join(' '))]));
+      /* ---- Search across title, place, series, collection, medium, date, ref ---- */
+      const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+      const hay = new Map(cat.artworks.map(a => [a.id, norm([a.title, a.place, a.seriesName, a.collection, a.date, a.year, a.medium, 'NE-' + a.id, a.status].join(' '))]));
       const search = (q, pool = cat.artworks) => {
         const words = norm(q).split(/\s+/).filter(Boolean);
         return pool.filter(a => words.every(w => hay.get(a.id).includes(w)));
       };
 
-      /* ---- Sketchbook tiles + sticky chips ---- */
-      tiles.innerHTML = cat.series.map(s => {
-        const c = cover(s.id), n = bySeries(s.id).length;
-        return `<a class="trip-tile reveal" href="gallery.html?series=${s.id}" data-series="${s.id}">
-          <img src="${c.image.thumb}" alt="" loading="lazy">
-          <div class="trip-tile__body"><strong>${s.name}</strong><span>${n} works · ${s.blurb.split(',').slice(-1)[0].trim()}</span></div></a>`;
-      }).join('');
-      chips.innerHTML = [{ id: 'all', name: 'Overview' }, ...cat.series]
-        .map(s => `<button class="chip" data-series="${s.id}">${s.name}</button>`).join('');
-
-      /* ---- State changes ---- */
+      /* ---- Navigation ---- */
       function go(patch) {
         Object.assign(state, patch);
         if (!('page' in patch)) state.page = 1;
         render();
       }
-      const scrollToResults = () => window.scrollTo({ top: Math.max(0, trip.getBoundingClientRect().top + scrollY - 88), behavior: 'smooth' });
+      const scrollToResults = () => window.scrollTo({ top: Math.max(0, (setSec.hidden ? overview : setSec).getBoundingClientRect().top + scrollY - 88), behavior: 'smooth' });
 
       document.addEventListener('click', (e) => {
-        const t = e.target.closest('[data-series]');
-        if (!t || !t.matches('.trip-tile, .chip, .trip-next a, .overview-more')) return;
+        const t = e.target.closest('[data-go-collection], [data-go-series]');
+        if (!t) return;
         e.preventDefault();
-        go({ series: t.dataset.series });
-        if (state.series === 'all' && !state.q) window.scrollTo({ top: 0, behavior: 'smooth' }); else scrollToResults();
+        if (t.dataset.goCollection !== undefined) go({ collection: t.dataset.goCollection, series: 'all' });
+        else go({ series: t.dataset.goSeries, collection: findSer(t.dataset.goSeries).collection });
+        if (state.collection === 'all' && state.series === 'all' && !state.q) window.scrollTo({ top: 0, behavior: 'smooth' });
+        else scrollToResults();
       });
       statusSel.addEventListener('change', () => go({ status: statusSel.value }));
       sortSel.addEventListener('change', () => go({ sort: sortSel.value }));
@@ -186,37 +184,82 @@
       });
 
       let searchTimer;
-      searchInputs.forEach(inp => {
-        inp.addEventListener('input', () => {
-          setSearchValue(inp.value);
-          clearTimeout(searchTimer);
-          searchTimer = setTimeout(() => go({ q: inp.value.trim() }), 220);
-        });
-      });
-      document.querySelectorAll('[data-search-form]').forEach(f => f.addEventListener('submit', (e) => {
-        e.preventDefault(); clearTimeout(searchTimer); go({ q: f.querySelector('[data-search]').value.trim() }); if (state.q) scrollToResults();
+      searchInputs.forEach(inp => inp.addEventListener('input', () => {
+        setSearchValue(inp.value);
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => go({ q: inp.value.trim() }), 220);
       }));
-      searchClears.forEach(b => b.addEventListener('click', () => { setSearchValue(''); go({ q: '' }); b.closest('form').querySelector('[data-search]').focus(); }));
+      document.querySelectorAll('[data-search-form]').forEach(f => f.addEventListener('submit', (e) => {
+        e.preventDefault(); clearTimeout(searchTimer);
+        go({ q: f.querySelector('[data-search]').value.trim() });
+        if (state.q) scrollToResults();
+      }));
+      searchClears.forEach(b => b.addEventListener('click', () => {
+        setSearchValue(''); go({ q: '' }); b.closest('form').querySelector('[data-search]').focus();
+      }));
 
       /* ---- Renderers ---- */
-      function renderOverview() {
-        overviewWrap.innerHTML = cat.series.map(s => {
-          const all = sortList(bySeries(s.id));
-          const some = all.slice(0, 6);
-          return `<section class="overview-block reveal" id="${s.id}">
-            <div class="section-head" style="margin-bottom:16px">
-              <div><h2 style="margin:0 0 .2em"><a class="anchor" href="gallery.html#${s.id}">${s.name}</a></h2><p class="muted" style="margin:0">${s.blurb} · ${all.length} works</p></div>
-              <a class="link link-arrow overview-more" href="gallery.html?series=${s.id}" data-series="${s.id}">View all ${all.length}</a>
-            </div>
-            <div class="grid grid--row" data-overview-grid="${s.id}">${some.map(a => NE.cardHTML(a)).join('')}</div>
-            <div class="overview-foot"><a class="btn btn--ghost btn--sm overview-more" href="gallery.html?series=${s.id}" data-series="${s.id}">Open the ${s.name} sketchbook →</a></div>
-          </section>`;
+      function renderTiles() {
+        if (state.collection === 'all') {
+          tiles.innerHTML = collections.map(col => {
+            const works = byCollection(col.id), c = cover(works);
+            return `<a class="trip-tile reveal" href="gallery.html?collection=${col.id}" data-go-collection="${col.id}">
+              <img src="${c.image.thumb}" alt="" loading="lazy">
+              <div class="trip-tile__body"><strong>${col.name}</strong><span>${works.length} works</span></div></a>`;
+          }).join('');
+        } else {
+          const list = seriesOf(state.collection);
+          if (list.length < 2) { tiles.innerHTML = ''; return; }   // one series — the tile would just repeat the heading
+          tiles.innerHTML = list.map(s => {
+            const works = bySeries(s.id), c = cover(works);
+            return `<a class="trip-tile reveal ${s.id === state.series ? 'is-active' : ''}" href="gallery.html?series=${s.id}" data-go-series="${s.id}">
+              <img src="${c.image.thumb}" alt="" loading="lazy">
+              <div class="trip-tile__body"><strong>${s.name}</strong><span>${works.length} works</span></div></a>`;
+          }).join('');
+        }
+      }
+
+      function renderChips() {
+        const items = state.collection === 'all'
+          ? [{ id: 'all', name: 'All work', go: 'collection' }, ...collections.map(c => ({ id: c.id, name: c.name, go: 'collection' }))]
+          : [{ id: 'all', name: '← All work', go: 'collection' },
+             { id: state.collection, name: findCol(state.collection).name, go: 'collection' },
+             ...seriesOf(state.collection).map(s => ({ id: s.id, name: s.name, go: 'series' }))];
+        chips.innerHTML = items.map(i => {
+          const on = i.go === 'collection' ? (state.series === 'all' && state.collection === i.id) : state.series === i.id;
+          return `<button class="chip" data-go-${i.go}="${i.id}" aria-pressed="${on}">${i.name}</button>`;
         }).join('');
-        overviewWrap.querySelectorAll('[data-overview-grid]').forEach(g => NE.watchGrid(g));
+      }
+
+      function overviewRow(key, name, blurb, list, href, attr) {
+        const some = sortList(list).slice(0, 6);
+        return `<section class="overview-block reveal" id="${key}">
+          <div class="section-head" style="margin-bottom:16px">
+            <div><h2 style="margin:0 0 .2em"><a class="anchor" href="gallery.html#${key}">${name}</a></h2>
+              <p class="muted" style="margin:0">${blurb} · ${list.length} works</p></div>
+            <a class="link link-arrow" href="${href}" ${attr}>View all ${list.length}</a>
+          </div>
+          <div class="grid grid--row" data-row="${key}">${some.map(a => NE.cardHTML(a)).join('')}</div>
+          <div class="overview-foot"><a class="btn btn--ghost btn--sm" href="${href}" ${attr}>Open ${name} →</a></div>
+        </section>`;
+      }
+
+      function renderOverview() {
+        if (state.collection === 'all') {
+          overviewWrap.innerHTML = collections.map(col =>
+            overviewRow(col.id, col.name, col.blurb, byCollection(col.id),
+              `gallery.html?collection=${col.id}`, `data-go-collection="${col.id}"`)).join('');
+        } else {
+          const col = findCol(state.collection);
+          overviewWrap.innerHTML = seriesOf(col.id).map(s =>
+            overviewRow(s.id, s.name, s.blurb, bySeries(s.id),
+              `gallery.html?series=${s.id}`, `data-go-series="${s.id}"`)).join('');
+        }
+        overviewWrap.querySelectorAll('[data-row]').forEach(g => NE.watchGrid(g));
         NE.lightbox.setItems(cat.artworks);
       }
 
-      function renderList(list, { title, blurb, eyebrow, s }) {
+      function renderSet(list, { title, blurb, eyebrow, nav }) {
         list = sortList(list.filter(a => state.status === 'all' || a.status === state.status));
         const per = perPage(); labelPerOptions();
         const pages = Math.max(1, Math.ceil(list.length / per));
@@ -224,69 +267,92 @@
         const start = (state.page - 1) * per;
         const slice = list.slice(start, start + per);
 
-        $('[data-trip-title]').textContent = title;
-        $('[data-trip-blurb]').innerHTML = blurb;
-        $('[data-trip-eyebrow]').textContent = eyebrow;
-        $('[data-count]').textContent = list.length ? (pages > 1 ? `Showing ${start + 1}–${Math.min(start + per, list.length)} of ${list.length} works` : `${list.length} ${list.length === 1 ? 'work' : 'works'}`) : '';
+        $('[data-set-title]').textContent = title;
+        $('[data-set-blurb]').innerHTML = blurb;
+        $('[data-set-eyebrow]').textContent = eyebrow;
+        $('[data-count]').textContent = list.length
+          ? (pages > 1 ? `Showing ${start + 1}–${Math.min(start + per, list.length)} of ${list.length} works`
+                       : `${list.length} ${list.length === 1 ? 'work' : 'works'}`) : '';
         grid.innerHTML = slice.map(a => NE.cardHTML(a)).join('');
         $('[data-empty]').hidden = list.length > 0;
-        NE.lightbox.setItems(list);          // arrows move through the whole set, not just this page
+        NE.lightbox.setItems(list);
         NE.watchGrid(grid);
 
         pager.innerHTML = pages > 1 ? `
           <button class="pager__btn" data-page="${state.page - 1}" ${state.page === 1 ? 'disabled' : ''} aria-label="Previous page">←</button>
           ${Array.from({ length: pages }, (_, i) => `<button class="pager__btn ${i + 1 === state.page ? 'is-current' : ''}" data-page="${i + 1}" ${i + 1 === state.page ? 'aria-current="page"' : ''}>${i + 1}</button>`).join('')}
           <button class="pager__btn" data-page="${state.page + 1}" ${state.page === pages ? 'disabled' : ''} aria-label="Next page">→</button>` : '';
+        nextNav.innerHTML = nav;
+      }
 
-        if (s) {
-          const i = cat.series.indexOf(s), prev = cat.series[i - 1], next = cat.series[i + 1];
-          tripNext.innerHTML = `
-            ${prev ? `<a href="gallery.html?series=${prev.id}" data-series="${prev.id}" class="trip-next__link"><img src="${cover(prev.id).image.thumb}" alt=""><span><small>Previous sketchbook</small>${prev.name}</span></a>` : '<span></span>'}
-            <a href="gallery.html" data-series="all" class="trip-next__all">All sketchbooks</a>
-            ${next ? `<a href="gallery.html?series=${next.id}" data-series="${next.id}" class="trip-next__link trip-next__link--r"><span><small>Next sketchbook</small>${next.name}</span><img src="${cover(next.id).image.thumb}" alt=""></a>` : '<span></span>'}`;
-        } else {
-          tripNext.innerHTML = `<span></span><a href="gallery.html" data-series="all" class="trip-next__all overview-more">Back to all sketchbooks</a><span></span>`;
-        }
+      function seriesNav(s) {
+        const sibs = seriesOf(s.collection), i = sibs.indexOf(s);
+        const prev = sibs[i - 1], next = sibs[i + 1];
+        const link = (t, label, right) => `<a href="gallery.html?series=${t.id}" data-go-series="${t.id}" class="trip-next__link${right ? ' trip-next__link--r' : ''}">
+            ${right ? '' : `<img src="${cover(bySeries(t.id)).image.thumb}" alt="">`}
+            <span><small>${label}</small>${t.name}</span>
+            ${right ? `<img src="${cover(bySeries(t.id)).image.thumb}" alt="">` : ''}</a>`;
+        if (sibs.length < 2) return `<span></span><a href="gallery.html" data-go-collection="all" class="trip-next__all">Back to all work</a><span></span>`;
+        return `${prev ? link(prev, 'Previous', false) : '<span></span>'}
+          <a href="gallery.html?collection=${s.collection}" data-go-collection="${s.collection}" class="trip-next__all">All ${findCol(s.collection).name.toLowerCase()}</a>
+          ${next ? link(next, 'Next', true) : '<span></span>'}`;
       }
 
       function render() {
         const searching = state.q.length > 0;
-        const s = cat.series.find(x => x.id === state.series);
-        const inTrip = !searching && !!s;
-        if (!s) state.series = 'all';
-        overview.hidden = inTrip || searching; trip.hidden = !(inTrip || searching);
+        const col = findCol(state.collection), ser = findSer(state.series);
+        const showSet = searching || !!ser;
+        overview.hidden = showSet; setSec.hidden = !showSet;
         searchClears.forEach(b => b.hidden = !searching);
-        tiles.querySelectorAll('.trip-tile').forEach(t => t.classList.toggle('is-active', t.dataset.series === state.series));
-        chips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.series === state.series));
+
+        $('[data-page-title]').textContent = col && !searching ? col.name : 'Work';
+        $('[data-crumbs]').innerHTML = col
+          ? `<a class="anchor" href="gallery.html" data-go-collection="all">Gallery</a> · ${col.name}` : 'Gallery';
+        $('[data-page-intro]').textContent = col && !searching ? col.blurb
+          : 'Nancy works in gouache, in pen and ink, in lino and in clay. Start with a collection, or search for a place or a subject.';
+
+        renderTiles(); renderChips();
 
         if (searching) {
-          const list = search(state.q, s ? bySeries(s.id) : cat.artworks);
-          const allHits = s ? search(state.q).length : list.length;
-          const scope = s
-            ? `Searching within the ${s.name} sketchbook${allHits > list.length ? ` — ${allHits} match${allHits === 1 ? '' : 'es'} across all sketchbooks · <a class="link overview-more" href="gallery.html?q=${encodeURIComponent(state.q)}" data-series="all">search everything</a>` : ''}.`
-            : 'Searching all sketchbooks — matched on title, place, sketchbook, date or reference.';
-          renderList(list, { title: `Results for “${state.q}”${s ? ` in ${s.name}` : ''}`, blurb: scope, eyebrow: 'Search', s: s || null });
-        } else if (inTrip) {
-          renderList(bySeries(s.id), { title: s.name, blurb: s.blurb, eyebrow: `Sketchbook ${cat.series.indexOf(s) + 1} of ${cat.series.length}`, s });
+          const pool = ser ? bySeries(ser.id) : col ? byCollection(col.id) : cat.artworks;
+          const list = search(state.q, pool);
+          const allHits = (ser || col) ? search(state.q).length : list.length;
+          const where = ser ? ser.name : col ? col.name : 'everything';
+          const blurb = (ser || col)
+            ? `Searching within ${where}${allHits > list.length ? ` — ${allHits} match${allHits === 1 ? '' : 'es'} across all the work · <a class="link" href="gallery.html?q=${encodeURIComponent(state.q)}" data-go-collection="all">search everything</a>` : ''}.`
+            : 'Searching every collection — title, place, series, material or reference.';
+          renderSet(list, { title: `Results for “${state.q}”`, blurb, eyebrow: 'Search',
+            nav: `<span></span><a href="gallery.html" data-go-collection="all" class="trip-next__all">Back to all work</a><span></span>` });
+        } else if (ser) {
+          renderSet(bySeries(ser.id), { title: ser.name, blurb: ser.blurb,
+            eyebrow: seriesOf(ser.collection).length > 1
+              ? `${findCol(ser.collection).name} · ${seriesOf(ser.collection).indexOf(ser) + 1} of ${seriesOf(ser.collection).length}`
+              : findCol(ser.collection).name,
+            nav: seriesNav(ser) });
         } else {
           renderOverview();
         }
-        NE.setQs({ series: state.series, q: state.q || null, status: state.status, sort: state.sort, per: state.per !== '10' ? state.per : null, page: state.page > 1 ? state.page : null });
-        document.title = searching ? `“${state.q}”${s ? ' in ' + s.name : ''} — Nancy Eder` : inTrip ? `${s.name} sketchbook — Nancy Eder` : 'Work — Nancy Eder';
+
+        NE.setQs({
+          collection: state.collection !== 'all' && !ser ? state.collection : null,
+          series: state.series !== 'all' ? state.series : null,
+          q: state.q || null, status: state.status, sort: state.sort,
+          per: state.per !== '10' ? state.per : null,
+          page: state.page > 1 ? state.page : null
+        });
+        document.title = searching ? `“${state.q}” — Nancy Eder`
+          : ser ? `${ser.name} — Nancy Eder` : col ? `${col.name} — Nancy Eder` : 'Work — Nancy Eder';
         NE.revealAll();
       }
       render();
       NE.jumpToHash();
 
-      // Re-snap the page size if a resize changes the column count
       let lastCols = columns(), rt;
-      window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (!trip.hidden && columns() !== lastCols) { lastCols = columns(); render(); } }, 150); });
+      window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (!setSec.hidden && columns() !== lastCols) { lastCols = columns(); render(); } }, 150); });
 
-      // Sticky trip bar appears once the tiles have scrolled away
       const onScroll = () => { bar.hidden = tiles.getBoundingClientRect().bottom > 80; };
       window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-      // Deep link: ?view=<id> opens the lightbox on that work within its trip
       const view = NE.qs('view');
       if (view) { const a = NE.getArt(view); if (a) { const set = bySeries(a.series); NE.lightbox.open(set, set.indexOf(a)); } }
     })();

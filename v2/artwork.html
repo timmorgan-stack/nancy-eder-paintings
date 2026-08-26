@@ -32,11 +32,11 @@
             <li><span>Size</span><span data-size></span></li>
             <li><span>Place</span><span data-place></span></li>
             <li><span>Date</span><span data-year></span></li>
-            <li><span>Presentation</span><span>Unframed, signed on the front</span></li>
+            <li><span>Presentation</span><span data-presentation></span></li>
             <li><span>Reference</span><span data-ref></span></li>
           </ul>
           <p data-desc class="muted" style="font-size:.95rem"></p>
-          <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h13v9H3zM16 11h3l2 3v3h-5z"/></svg>Ships flat, insured and tracked. Flat-rate US shipping <span data-shipping></span>; international by quote. <a class="link" href="about.html#shipping">Shipping &amp; returns</a></p>
+          <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h13v9H3zM16 11h3l2 3v3h-5z"/></svg><span data-shipnote></span> <a class="link" href="about.html#shipping">Shipping &amp; returns</a></p>
         </div>
       </article>
     </div>
@@ -45,7 +45,7 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="eyebrow">From the same trip</div>
+            <div class="eyebrow">More like this</div>
             <h2 data-related-title style="margin:0">More from this series</h2>
           </div>
           <a class="link link-arrow" data-related-link href="gallery.html">See the series</a>
@@ -76,16 +76,23 @@
       img.src = a.image.large; img.alt = `${a.title} — ${a.medium}`; img.width = a.image.w; img.height = a.image.h;
       $('[data-media]').setAttribute('data-lightbox', a.id);
       $('[data-media] .card__zoom').innerHTML = NE.ICON_ZOOM;
-      $('[data-series]').textContent = `${a.seriesName} series`;
+      $('[data-series]').textContent = a.seriesName;
       $('[data-title]').textContent = a.title;
-      $('[data-sub]').textContent = `${a.place} · ${a.date}`;
+      $('[data-sub]').textContent = NE.meta(a);
       $('[data-price]').innerHTML = sold ? '<span class="badge badge--sold">Sold</span>' : `${NE.money(a.price)}<small>USD · original</small>`;
       $('[data-medium]').textContent = a.medium;
       $('[data-size]').textContent = a.size;
-      $('[data-year]').textContent = a.date; $('[data-place]').textContent = a.place;
+      // hide the place/date rows when the work doesn't carry them
+      const row = (sel, val) => { const el = $(sel); if (val) el.textContent = val; else el.closest('li').hidden = true; };
+      row('[data-place]', a.place); row('[data-year]', a.date);
+      // clay is signed and packed differently from work on paper
+      const isPot = a.collection === 'pottery';
+      $('[data-presentation]').textContent = isPot ? 'Signed on the base' : 'Unframed, signed on the front';
+      $('[data-shipnote]').innerHTML = isPot
+        ? `Packed in a padded box, insured and tracked. Flat-rate US shipping ${NE.money(NE.SHIPPING_FLAT)}; international by quote.`
+        : `Ships flat, insured and tracked. Flat-rate US shipping ${NE.money(NE.SHIPPING_FLAT)}; international by quote.`;
       $('[data-ref]').textContent = `NE-${a.id}`;
       $('[data-desc]').textContent = a.description;
-      $('[data-shipping]').textContent = NE.money(NE.SHIPPING_FLAT);
 
       const cta = $('[data-cta]');
       if (sold) {
