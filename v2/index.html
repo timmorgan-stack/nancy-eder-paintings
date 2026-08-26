@@ -138,9 +138,9 @@
         document.querySelector('[data-hero-caption]').textContent = `${hero.title} · ${NE.meta(hero)} · ${hero.size}`;
       }
 
-      // Featured grid: 8 random works, not repeating the hero — mostly featured, with a couple of surprises
+      // Featured grid: 3 random works, not repeating the hero — mostly featured, with the odd surprise
       const rest = shuffle(available.filter(a => !a.featured));
-      const featured = [...featuredPool.slice(1, 7), ...rest].filter(a => a.id !== hero.id).slice(0, 8);
+      const featured = [...featuredPool.slice(1), ...rest].filter(a => a.id !== hero.id).slice(0, 3);
       const grid = document.querySelector('[data-featured-grid]');
       grid.innerHTML = featured.map(a => NE.cardHTML(a)).join('');
       NE.lightbox.setItems(featured);
