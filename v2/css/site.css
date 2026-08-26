@@ -240,7 +240,7 @@ body.lb-open { overflow: hidden; }
 .related .grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 
 /* ---------- About ---------- */
-.about { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.about { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
 .about figure { margin: 0; }
 .about__portrait img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
 .about__portrait figcaption { font-family: var(--serif); font-size: 1rem; color: var(--ink-soft); margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
@@ -264,7 +264,7 @@ body.lb-open { overflow: hidden; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 32px 0; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .stats strong { display: block; font-family: var(--serif); font-size: 1.8rem; font-weight: 400; }
 .stats span { font-size: .8rem; color: var(--muted); }
-@media (max-width: 860px) { .about { grid-template-columns: 1fr; } .about__portrait { max-width: 320px; } }
+@media (max-width: 860px) { .about { grid-template-columns: 1fr; } .about__figures { max-width: 260px; } }
 
 /* ---------- Forms ---------- */
 .form { display: grid; gap: 20px; }
@@ -497,12 +497,13 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 @media (max-width: 520px) { .timeline { grid-template-columns: 1fr; } .timeline li { padding-right: 0; } }
 
 /* ---------- About: studio photograph ---------- */
-/* portrait leads; the worktable sits under it at about a third of the width */
-.about__figures { display: grid; grid-template-columns: 1fr; gap: 20px; }
-.about__studio { width: 62%; max-width: 260px; }
+/* Portrait leads. The worktable is a supporting detail and must never out-size it,
+   so it is capped in absolute terms rather than as a percentage of a changing column. */
+.about__figures { display: grid; gap: 18px; justify-items: start; }
+.about__portrait { width: 100%; }
+.about__studio { width: 100%; }   /* matches the portrait exactly */
 .about__studio img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
-.about__studio figcaption { font-size: .74rem; line-height: 1.45; color: var(--muted); margin-top: 8px; }
-@media (max-width: 860px) { .about__figures { grid-template-columns: 1fr 1fr; align-items: start; } .about__studio { width: 100%; max-width: none; } }
+.about__studio figcaption { font-size: .72rem; line-height: 1.45; color: var(--muted); margin-top: 8px; }
 
 .trip-tiles:empty { display: none; }
 
