@@ -44,6 +44,8 @@ window.NE = (function () {
     has: (id) => readCart().includes(String(id)),
     add(id) {
       id = String(id);
+      const a = getArt(id);
+      if (a && a.status === 'sold') return readCart();
       const ids = readCart();
       if (!ids.includes(id)) { ids.push(id); writeCart(ids); }
       return ids;
@@ -51,8 +53,15 @@ window.NE = (function () {
     remove(id) { writeCart(readCart().filter(x => x !== String(id))); },
     clear() { writeCart([]); },
     items() { return readCart().map(getArt).filter(Boolean); },
+    // Originals are one-offs: a work can be marked sold while it sits in someone's cart,
+    // so the cart drops sold items rather than letting them reach checkout.
+    prune() {
+      const gone = this.items().filter(a => a.status === 'sold');
+      if (gone.length) writeCart(readCart().filter(id => { const a = getArt(id); return !a || a.status !== 'sold'; }));
+      return gone;
+    },
     totals() {
-      const items = this.items();
+      const items = this.items().filter(a => a.status !== 'sold');
       const subtotal = items.reduce((s, a) => s + (a.price || 0), 0);
       const shipping = items.length ? SHIPPING_FLAT : 0;
       return { items, subtotal, shipping, total: subtotal + shipping };

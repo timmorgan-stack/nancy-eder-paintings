@@ -47,6 +47,8 @@
   <script>
     (async () => {
       await NE.loadCatalog();
+      const gone = NE.cart.prune();
+      if (gone.length) NE.toast(`${gone.length === 1 ? gone[0].title + ' has' : gone.length + ' works have'} sold and been removed from your cart.`, 6000);
       const lines = document.querySelector('[data-lines]');
       const empty = document.querySelector('[data-empty]');
       const summary = document.querySelector('[data-summary]');

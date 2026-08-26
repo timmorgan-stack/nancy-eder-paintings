@@ -99,6 +99,34 @@ holds paintings and drawings and prints from the same trip together.
 * URLs: `?sketchbook=cuba`, and `?sketchbook=france&collection=drawings` to pin one to a medium.
 * Re-run it after any import: `python3 tools/build_sketchbooks.py v2/data/catalog.json`.
 
+## Marking work sold
+
+`status` on each artwork is `"available"` or `"sold"`. Use the tool rather than hand-editing —
+it rewrites `data/catalog.json` **and** regenerates `data/catalog.js` in one go:
+
+```bash
+python3 tools/mark_sold.py a121 c039        # mark these sold (ids are the NE- reference, minus the prefix)
+python3 tools/mark_sold.py --available a121 # put one back on sale
+python3 tools/mark_sold.py --list           # what's sold right now
+python3 tools/mark_sold.py --sample 2       # demo data: N per collection, resets everything else
+```
+
+**Two per collection are currently marked sold as samples** (via `--sample 2`) so the state is
+visible everywhere — change them whenever the real ones are known.
+
+What a sold work does:
+* grid card gets a **SOLD** badge and the price is replaced with "Sold";
+* the artwork page shows the badge, drops the price, hides the shipping note, and swaps
+  *Add to cart* for *Ask about a similar piece* (pre-filled contact form);
+* the lightbox shows "Sold" and no cart button;
+* it is excluded from the home hero, the featured three and the About page's rotating painting;
+* the availability filter (`?status=sold` / `?status=available`) works in every gallery view.
+
+Because these are one-offs, the cart is defensive: `NE.cart.add()` refuses a sold work outright,
+and `NE.cart.prune()` — called on both the cart and checkout pages — silently drops anything that
+sold while it sat in a visitor's cart, telling them which work it was. Checkout bounces back to the
+cart if that happens, so a sold original can't be bought twice.
+
 ## Still to confirm with Nancy
 * **Gouache vs watercolour per work** — the catalogue now says gouache for everything; some pages
   are plainly watercolour washes. Ideally each work is tagged individually.

@@ -88,6 +88,7 @@
       // clay is signed and packed differently from work on paper
       const isPot = a.collection === 'pottery';
       $('[data-presentation]').textContent = isPot ? 'Signed on the base' : 'Unframed, signed on the front';
+      $('[data-shipnote]').closest('p').hidden = sold;   // nothing to ship
       $('[data-shipnote]').innerHTML = isPot
         ? `Packed in a padded box, insured and tracked. Flat-rate US shipping ${NE.money(NE.SHIPPING_FLAT)}; international by quote.`
         : `Ships flat, insured and tracked. Flat-rate US shipping ${NE.money(NE.SHIPPING_FLAT)}; international by quote.`;

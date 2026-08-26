@@ -280,7 +280,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "11 × 14 in",
    "price": 425,
-   "status": "sold",
+   "status": "available",
    "featured": false,
    "description": "Painted on location in Cuba, January 2014. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -418,7 +418,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "9 × 12 in",
    "price": 325,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Painted on location in San Antonio, Cuba, January 2014. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -1016,7 +1016,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "11 × 14 in",
    "price": 425,
-   "status": "sold",
+   "status": "available",
    "featured": false,
    "description": "Painted on location in Rygge, Norway, August 2016. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -1430,7 +1430,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "8 × 10 in",
    "price": 275,
-   "status": "sold",
+   "status": "available",
    "featured": false,
    "description": "Painted on location in Porto, Portugal, July 2016. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -1453,7 +1453,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "9 × 12 in",
    "price": 325,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Painted on location in Porto, Portugal, July 2016. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -1683,7 +1683,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "11 × 14 in",
    "price": 425,
-   "status": "sold",
+   "status": "available",
    "featured": false,
    "description": "Painted on location in Porto, Portugal, July 2016. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -2373,7 +2373,7 @@ window.NE_CATALOG = {
    "medium": "Ink and gouache on paper",
    "size": "12 × 16 in",
    "price": 550,
-   "status": "sold",
+   "status": "available",
    "featured": false,
    "description": "Painted on location in Umbria, Italy, July 2016. Drawn directly in ink and worked up in gouache and watercolour in the sketchbook, and captioned in the artist's hand. Sold unframed; ships flat between archival boards.",
    "image": {
@@ -3414,7 +3414,7 @@ window.NE_CATALOG = {
    "medium": "Hand-built glazed ceramic",
    "size": "6 in diameter",
    "price": 120,
-   "status": "available",
+   "status": "sold",
    "featured": true,
    "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
    "image": {
@@ -4105,7 +4105,7 @@ window.NE_CATALOG = {
    "medium": "Pen and ink on paper",
    "size": "11 × 14 in",
    "price": 280,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
    "image": {
@@ -4196,7 +4196,7 @@ window.NE_CATALOG = {
    "medium": "Pen and ink on paper",
    "size": "8 × 10 in",
    "price": 180,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Drawn directly in ink, without pencil first — one sitting, no reworking. Sold unframed; ships flat.",
    "image": {
@@ -5163,7 +5163,7 @@ window.NE_CATALOG = {
    "medium": "Linocut on paper",
    "size": "11 × 14 in",
    "price": 160,
-   "status": "available",
+   "status": "sold",
    "featured": true,
    "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
    "image": {
@@ -5185,7 +5185,7 @@ window.NE_CATALOG = {
    "medium": "Linocut on paper",
    "size": "8 × 10 in",
    "price": 120,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "A linocut cut and printed by the artist, each impression inked and coloured by hand, so no two are identical.",
    "image": {
@@ -5413,7 +5413,7 @@ window.NE_CATALOG = {
    "medium": "Hand-built glazed ceramic",
    "size": "7 in diameter",
    "price": 165,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "A hand-built bowl, glazed and fired by the artist. Small variations in rim and glaze are part of the making.",
    "image": {
@@ -9877,7 +9877,7 @@ window.NE_CATALOG = {
    "medium": "Linocut and gouache collage on paper",
    "size": "12 × 16 in",
    "price": 475,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
    "image": {
@@ -9987,7 +9987,7 @@ window.NE_CATALOG = {
    "medium": "Linocut and gouache collage on paper",
    "size": "12 × 16 in",
    "price": 475,
-   "status": "available",
+   "status": "sold",
    "featured": false,
    "description": "Hand-printed linocut, cut up and collaged with gouache — a one-off built from her own prints.",
    "image": {

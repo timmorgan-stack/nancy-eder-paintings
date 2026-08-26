@@ -99,6 +99,7 @@
     (async () => {
       await NE.loadCatalog();
       const form = document.querySelector('[data-hook="checkout-form"]');
+      if (NE.cart.prune().length) { location.replace('cart.html'); return; }   // something sold en route
       const t = NE.cart.totals();
       if (!t.items.length) { location.replace('cart.html'); return; }
 
