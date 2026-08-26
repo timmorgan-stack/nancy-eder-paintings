@@ -500,3 +500,5 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .studio { margin: 0; }
 .studio img { width: 100%; border-radius: 2px; box-shadow: var(--shadow); }
 .studio figcaption { font-size: .82rem; color: var(--muted); margin-top: 12px; }
+
+.trip-tiles:empty { display: none; }
