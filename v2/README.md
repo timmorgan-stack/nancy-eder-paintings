@@ -52,6 +52,28 @@ just duplicates two works already catalogued. One studio photograph was kept but
 `data/catalog.json` gained a `collections` array, and every series and artwork carries a
 `collection`. New-work ids are `aNNN` (reference `NE-aNNN`), matching the source filename number.
 
+## Second drop (2026-08-26, +137 works)
+
+The source folder was **re-exported and renumbered** between drops, so filenames no longer identify
+a work. Already-imported images are found by perceptual hash (`ahash`) against `img/thumb/`, not by
+name — matched distances were ≤4, unmatched ≥13, so the split is unambiguous. Ids from the first
+drop are `aNNN`; this drop is `bNNN`. **Neither number will survive another re-export** — match by
+content, don't trust the filename.
+
+Map in `tools/classify_batch2.py`, importer in `tools/build_batch2.py`.
+New series: **Maine & Acadia** (Acadia, Mount Desert Island, Schoodic Peninsula — several signed 2024),
+**Trees & Woods**, **Landscapes** (used where no place is recorded, so the site doesn't claim one).
+Collage went 3 → 31 and Prints 4 → 12.
+
+**Left out of this drop (45):**
+* 38 photographs — places, food, market stalls, a museum wall label, and family/friends snapshots.
+* **3 paintings by other artists**, photographed in gilt frames at a museum (nos. 235–237 of that
+  export). They are not Nancy's work and must not be listed as hers.
+* 4 composites — several works in one photograph, so not sellable as a single piece.
+* **One photograph of personal insurance documents** showing her name, member numbers and dates.
+  Not imported. **It should be deleted from the source folder** — it doesn't belong in a folder
+  that gets handed to anyone building the site.
+
 ## Still to confirm with Nancy
 * **Gouache vs watercolour per work** — the catalogue now says gouache for everything; some pages
   are plainly watercolour washes. Ideally each work is tagged individually.
@@ -65,3 +87,11 @@ just duplicates two works already catalogued. One studio photograph was kept but
 * Whether the linocuts are **editioned** (the description says each is hand-coloured and unique).
 * Two works (a047, a135) look like framed/board paintings rather than sketchbook pages — worth
   checking their medium.
+* **Maine & Acadia**: only 7 of the 11 carry a caption naming the place; the other 4 were grouped by
+  eye from the same body of work and may belong elsewhere.
+* **Landscapes** (17 works) is a holding series for paintings with no recorded place — most are
+  probably Céret or Maine, but they need her to say which.
+* The tropical foliage studies (agaves, palms, fronds) are in **Leaves & Gardens**; several are
+  likely Florida and could move there.
+* Collage vs painting is a judgement call on about a dozen pieces where torn paper and gouache are
+  mixed — worth her eye.
